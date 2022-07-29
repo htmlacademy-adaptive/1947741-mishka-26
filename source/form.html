@@ -11,7 +11,7 @@
     <div class="main-header__container">
       <nav class="main-navigation">
         <div class="main-navigation__logo">
-          <a class="main-navigation__logo-link" href="#">
+          <a class="main-navigation__logo-link" href="index.html">
             <img class="main-navigation__logo-image" src="" alt="Логотип интернет-магазина Mishka.">
           </a>
         </div>
@@ -21,7 +21,7 @@
         <div class="main-navigation__list site-list">
           <ul class="site-list__basic">
             <li class="site-list__item">
-              <a class="site-list__link" href="#">Каталог товаров</a>
+              <a class="site-list__link" href="catalog.html">Каталог товаров</a>
             </li>
             <li class="site-list__item">
               <a class="site-list__link" href="#">Вязание на заказ</a>
@@ -51,12 +51,137 @@
     </div>
   </header>
 
+  <main class="main-container">
+    <h1 class="main-title">Вязание на заказ</h1>
 
+    <section class="order">
+      <div class="order__container">
+        <h2 class="visually-hidden">Форма заказа.</h2>
+        <p class="order__description">Мы&nbsp;будем рады воплотить в&nbsp;жизнь ваши пожелания! Заполните простую
+          форму заказа и&nbsp;мы&nbsp;свяжемся с&nbsp;вами, чтобы уточнить детали.</p>
+      </div>
+
+      <form class="order__form order-form" action="https://echo.htmlacademy.ru/" method="post">
+        <fieldset class="order-form__form-group form-group">
+          <div class="form-group__container">
+            <legend class="form-group__title">ТИП</legend>
+            <ul class="form-group__list form-group__list--radio">
+              <li class="form-group__item control control--radio">
+                <input class="control__input" id="accessories" type="radio" name="type" value="accessories" checked>
+                <label class="control__label" for="accessories">Аксессуар для интерьера</label>
+              </li>
+              <li class="form-group__item control control--radio">
+                <input class="control__input" id="toys" type="radio" name="type" value="toys">
+                <label class="control__label" for="toys">Детская игрушка</label>
+              </li>
+            </ul>
+          </div>
+        </fieldset>
+
+        <div class="order-form__container">
+          <fieldset class="order-form__form-group form-group">
+            <div class="form-group__container">
+              <legend class="form-group__title">Цвет</legend>
+              <ul class="form-group__list form-group__list--checkbox">
+                <li class="form-group__item control control--checkbox">
+                  <input class="control__input" id="white" type="checkbox" name="white" checked>
+                  <label class="control__label" for="white">Белый</label>
+                </li>
+                <li class="form-group__item control control--checkbox">
+                  <input class="control__input" id="grey" type="checkbox" name="grey" checked>
+                  <label class="control__label" for="grey">Серый</label>
+                </li>
+                <li class="form-group__item control control--checkbox">
+                  <input class="control__input" id="tiffany" type="checkbox" name="tiffany">
+                  <label class="control__label" for="tiffany">Тиффани</label>
+                </li>
+                <li class="form-group__item control control--checkbox">
+                  <input class="control__input" id="black" type="checkbox" name="black">
+                  <label class="control__label" for="black">Черный</label>
+                </li>
+                <li class="form-group__item control control--checkbox">
+                  <input class="control__input" id="pink" type="checkbox" name="pink">
+                  <label class="control__label" for="pink">Розовый</label>
+                </li>
+                <li class="form-group__item control control--checkbox">
+                  <input class="control__input" id="orange" type="checkbox" name="orange">
+                  <label class="control__label" for="orange">Оранжевый</label>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+        </div>
+
+        <fieldset class="order-form__form-group form-group user-info">
+          <div class="form-group__container">
+            <legend class="form-group__title">ФИО</legend>
+            <ul class="form-group__list user-info__list">
+              <li class="user-info__item">
+                <label class="user-info__label" for="name">Имя:</label>
+                <input class="user-info__input input" id="name" type="text" name="name" placeholder="Введите ваше имя*"
+                  required>
+              </li>
+              <li class="user-info__item">
+                <label class="user-info__label" for="surname">Фамилия:</label>
+                <input class="user-info__input input" id="surname" type="text" name="surname"
+                  placeholder="Укажите фамилию*" required>
+              </li>
+              <li class="user-info__item">
+                <label class="user-info__label" for="second-name">Отчество:</label>
+                <input class="user-info__input input" id="second-name" type="text" name="second-name"
+                  placeholder="Отчество, если желаете">
+              </li>
+            </ul>
+          </div>
+        </fieldset>
+
+        <div class="order-form__container">
+          <fieldset class="order-form__form-group form-group phone">
+            <div class="form-group__container">
+              <legend class="form-group__title">Тел</legend>
+              <p class="phone__container">
+                <label class="visually-hidden" for="phone">Телефон.</label>
+                <input class="phone__input input" id="phone" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*"
+                  required>
+              </p>
+            </div>
+          </fieldset>
+
+          <fieldset class="order-form__form-group form-group email">
+            <div class="form-group__container">
+              <legend class="form-group__title">E-mail</legend>
+              <p class="email__container">
+                <label class="visually-hidden" for="email">E-mail.</label>
+                <input class="email__input input" id="email" type="email" name="email" placeholder="Ваш Email*"
+                  required>
+              </p>
+            </div>
+          </fieldset>
+        </div>
+
+        <fieldset class="order-form__form-group form-group additionally">
+          <div class="form-group__container">
+            <legend class="form-group__title">Доп</legend>
+            <p class="additionally__container">
+              <label class="visually-hidden" for="additionally">Дополнительная информация.</label>
+              <textarea class="additionally__text" id="additionally" name="additionally"
+                rows="6">Опишите все ваши пожелания к заказу</textarea>
+            </p>
+          </div>
+        </fieldset>
+
+        <div class="order-form__send send">
+          <p class="send__info">*Поля обязательны для заполнения</p>
+          <button class="send__button button button--light" type="button">ОТПРАВИТЬ ЗАКАЗ</button>
+        </div>
+      </form>
+    </section>
+  </main>
 
   <footer class="main-footer">
     <div class="main-footer__container">
       <div class="main-footer__logo">
-        <a class="main-footer__logo-link" href="#">
+        <a class="main-footer__logo-link" href="index.html">
           <img class="main-footer__logo-image" src="" alt="Логотип интернет-магазина Mishka.">
         </a>
       </div>
