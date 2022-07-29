@@ -64,8 +64,8 @@
       </div>
 
       <form class="order__form order-form" action="https://echo.htmlacademy.ru/" method="post">
-        <fieldset class="order-form__form-group form-group">
-          <div class="form-group__container">
+        <div class="order-form__container">
+          <fieldset class="order-form__form-group form-group">
             <legend class="form-group__title">ТИП</legend>
             <ul class="form-group__list form-group__list--radio">
               <li class="form-group__item control control--radio">
@@ -77,12 +77,12 @@
                 <label class="control__label" for="toys">Детская игрушка</label>
               </li>
             </ul>
-          </div>
-        </fieldset>
+          </fieldset>
+        </div>
 
-        <div class="order-form__container">
-          <fieldset class="order-form__form-group form-group">
-            <div class="form-group__container">
+        <div class="order-form__wrapper">
+          <div class="order-form__container">
+            <fieldset class="order-form__form-group form-group">
               <legend class="form-group__title">Цвет</legend>
               <ul class="form-group__list form-group__list--checkbox">
                 <li class="form-group__item control control--checkbox">
@@ -110,12 +110,12 @@
                   <label class="control__label" for="orange">Оранжевый</label>
                 </li>
               </ul>
-            </div>
-          </fieldset>
+            </fieldset>
+          </div>
         </div>
 
-        <fieldset class="order-form__form-group form-group user-info">
-          <div class="form-group__container">
+        <div class="order-form__container">
+          <fieldset class="order-form__form-group form-group user-info">
             <legend class="form-group__title">ФИО</legend>
             <ul class="form-group__list user-info__list">
               <li class="user-info__item">
@@ -134,47 +134,47 @@
                   placeholder="Отчество, если желаете">
               </li>
             </ul>
-          </div>
-        </fieldset>
+          </fieldset>
+        </div>
 
-        <div class="order-form__container">
-          <fieldset class="order-form__form-group form-group phone">
-            <div class="form-group__container">
+        <div class="order-form__wrapper">
+          <div class="order-form__container">
+            <fieldset class="order-form__form-group form-group phone">
               <legend class="form-group__title">Тел</legend>
               <p class="phone__container">
                 <label class="visually-hidden" for="phone">Телефон.</label>
                 <input class="phone__input input" id="phone" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*"
                   required>
               </p>
-            </div>
-          </fieldset>
+            </fieldset>
 
-          <fieldset class="order-form__form-group form-group email">
-            <div class="form-group__container">
+            <fieldset class="order-form__form-group form-group email">
               <legend class="form-group__title">E-mail</legend>
               <p class="email__container">
                 <label class="visually-hidden" for="email">E-mail.</label>
                 <input class="email__input input" id="email" type="email" name="email" placeholder="Ваш Email*"
                   required>
               </p>
-            </div>
-          </fieldset>
+            </fieldset>
+          </div>
         </div>
 
-        <fieldset class="order-form__form-group form-group additionally">
-          <div class="form-group__container">
+        <div class="order-form__container">
+          <fieldset class="order-form__form-group form-group additionally">
             <legend class="form-group__title">Доп</legend>
             <p class="additionally__container">
               <label class="visually-hidden" for="additionally">Дополнительная информация.</label>
               <textarea class="additionally__text" id="additionally" name="additionally"
                 rows="6">Опишите все ваши пожелания к заказу</textarea>
             </p>
-          </div>
-        </fieldset>
+          </fieldset>
+        </div>
 
-        <div class="order-form__send send">
-          <p class="send__info">*Поля обязательны для заполнения</p>
-          <button class="send__button button button--light" type="submit">ОТПРАВИТЬ ЗАКАЗ</button>
+        <div class="order-form__container">
+          <div class="order-form__send send">
+            <p class="send__info">*Поля обязательны для заполнения</p>
+            <button class="send__button button button--light" type="submit">ОТПРАВИТЬ ЗАКАЗ</button>
+          </div>
         </div>
       </form>
     </section>
