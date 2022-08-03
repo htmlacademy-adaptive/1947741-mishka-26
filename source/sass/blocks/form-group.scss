@@ -1,0 +1,14 @@
+.form-group {
+  border: none;
+}
+
+.form-group__title {
+  line-height: 16px;
+  font-weight: 700;
+  color: var(--green-blue);
+  text-transform: uppercase;
+}
+
+.form-group__item {
+  list-style-type: none;
+}

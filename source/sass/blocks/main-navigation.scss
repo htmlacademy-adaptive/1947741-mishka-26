@@ -1,0 +1,16 @@
+.main-navigation {
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--black);
+}
+
+.main-navigation__logo-link {
+  text-decoration: none;
+}
+
+.main-navigation__text {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--dark-grey);
+}

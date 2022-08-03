@@ -1,0 +1,29 @@
+.weekly-product__title {
+  font-size: 25px;
+  font-weight: 700;
+  color: var(--black);
+}
+
+.weekly-product__subtitle {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  color: var(--green-blue);
+  text-transform: uppercase;
+}
+
+.weekly-product__description {
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.weekly-product__table-row {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.weekly-product__price {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+}
