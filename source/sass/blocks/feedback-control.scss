@@ -1,0 +1,14 @@
+.feedback-control__list {
+  margin: 0;
+  padding: 0;
+}
+
+.feedback-control__item {
+  list-style-type: none;
+}
+
+.feedback-control__button {
+  padding: 13px 42px 13px 38px;
+  background-color: var(--white);
+  border: 1px solid var(--light);
+}

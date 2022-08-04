@@ -1,15 +1,31 @@
+.contacts__container {
+  padding: 38px 30px 39px 30px;
+}
+
 .contacts__title {
+  margin: 0;
+  padding: 0;
   font-size: 25px;
   font-weight: 700;
   color: var(--black);
 }
 
-.contacts__table-row {
+.contacts__table {
+  margin: 0;
+  margin-bottom: 38px;
   font-size: 14px;
+}
+
+.contacts__value {
+  margin: 0;
 }
 
 .contacts__value-link {
   color: var(--dark-grey);
   text-decoration: none;
   border-bottom: 1px solid var(--moderate-cyan);
+}
+
+.contacts__map {
+  padding: 30px 0 42px;
 }

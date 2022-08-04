@@ -2,6 +2,7 @@
   line-height: 24px;
   font-weight: 700;
   color: var(--black);
+  text-align: center;
 }
 
 .main-navigation__logo-link {
@@ -9,6 +10,7 @@
 }
 
 .main-navigation__text {
+  margin: 0;
   font-size: 15px;
   line-height: 24px;
   font-weight: 400;

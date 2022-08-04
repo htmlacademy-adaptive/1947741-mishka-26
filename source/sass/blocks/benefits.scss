@@ -1,7 +1,19 @@
+.benefits__container {
+  padding: 31px 30px 58px 30px;
+}
+
 .benefits__title {
+  margin: 0;
+  margin-bottom: 28px;
+  padding: 0;
   font-size: 25px;
   font-weight: 700;
   color: var(--black);
+}
+
+.benefits__list {
+  margin: 0;
+  padding: 0;
 }
 
 .benefits__item {
@@ -9,4 +21,33 @@
   font-weight: 700;
   color: var(--black);
   list-style-type: none;
+}
+
+.benefits__item--flower {
+  margin-bottom: 30px;
+  padding-top: 54px;
+}
+
+.benefits__item--cash {
+  margin-bottom: 35px;
+  padding-top: 53px;
+}
+
+.benefits__item--heart {
+  margin-bottom: 32px;
+  padding-top: 48px;
+}
+
+.benefits__item--threads {
+  margin-bottom: 33px;
+  padding-top: 51px;
+}
+
+.benefits__item--rocket {
+  margin-bottom: 32px;
+  padding-top: 49px;
+}
+
+.benefits__item--gift {
+  padding-top: 52px;
 }
