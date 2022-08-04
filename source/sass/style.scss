@@ -1,4 +1,6 @@
 // Начните писать стили здесь
+@import "./blocks/fonts.scss";
+@import "./blocks/colors.scss";
 @import "./blocks/page.scss";
 @import "./blocks/main-header.scss";
 @import "./blocks/main-navigation.scss";
@@ -35,43 +37,3 @@
 @import "./blocks/production.scss";
 @import "./blocks/player-button.scss";
 
-@font-face {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/opensans.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/opensans.woff") format("woff");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/opensansbold.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/opensansbold.woff") format("woff");
-  font-display: swap;
-}
-
-:root {
-  --black: #000000;
-  --white: #ffffff;
-  --dark-grey: #444444;
-  --green-blue: #63d1bb;
-  --moderate-cyan: #62d1ba;
-  --light-gray: #b3b3b3;
-}
