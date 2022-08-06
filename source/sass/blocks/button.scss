@@ -9,16 +9,16 @@
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
-}
 
-.button--light {
-  color: var(--dark-grey);
-  background-color: var(--white);
-  border: 2px solid var(--dark-grey);
-}
+  &--light {
+    color: var(--dark-grey);
+    background-color: var(--white);
+    border: 2px solid var(--dark-grey);
+  }
 
-.button--dark {
-  color: var(--white);
-  background-color: var(--green-blue);
-  border: none;
+  &--dark {
+    color: var(--white);
+    background-color: var(--green-blue);
+    border: none;
+  }
 }

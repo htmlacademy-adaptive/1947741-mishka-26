@@ -10,8 +10,8 @@
 .product-cards__item {
   list-style-type: none;
   margin-bottom: 30px;
-}
 
-.product-cards__item:last-child {
-  margin-bottom: 0;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }

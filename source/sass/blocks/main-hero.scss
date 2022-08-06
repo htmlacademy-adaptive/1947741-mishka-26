@@ -5,7 +5,7 @@
 .main-hero__container {
 
   background-color: var(--extra-light);
-  background-image: url("../../img/hero-mobile.jpg");
+  background-image: url("../img/hero-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -17,16 +17,16 @@
   font-weight: 700;
   color: var(--black);
   text-align: center;
-}
 
-.main-hero__title--index {
-  padding: 73px 0 120px 0;
-}
+  &--index {
+    padding: 73px 0 120px 0;
+  }
 
-.main-hero__title--form {
-  padding: 73px 0 73px 0;
-}
+  &--form {
+    padding: 73px 0 73px 0;
+  }
 
-.main-hero__title--catalog {
-  padding: 73px 0 73px 0;
+  &--catalog {
+    padding: 73px 0 73px 0;
+  }
 }

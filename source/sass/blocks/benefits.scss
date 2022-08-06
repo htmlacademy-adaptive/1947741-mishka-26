@@ -21,33 +21,33 @@
   font-weight: 700;
   color: var(--black);
   list-style-type: none;
-}
 
-.benefits__item--flower {
-  margin-bottom: 30px;
-  padding-top: 54px;
-}
+  &--flower {
+    margin-bottom: 30px;
+    padding-top: 54px;
+  }
 
-.benefits__item--cash {
-  margin-bottom: 35px;
-  padding-top: 53px;
-}
+  &--cash {
+    margin-bottom: 35px;
+    padding-top: 53px;
+  }
 
-.benefits__item--heart {
-  margin-bottom: 32px;
-  padding-top: 48px;
-}
+  &--heart {
+    margin-bottom: 32px;
+    padding-top: 48px;
+  }
 
-.benefits__item--threads {
-  margin-bottom: 33px;
-  padding-top: 51px;
-}
+  &--threads {
+    margin-bottom: 33px;
+    padding-top: 51px;
+  }
 
-.benefits__item--rocket {
-  margin-bottom: 32px;
-  padding-top: 49px;
-}
+  &--rocket {
+    margin-bottom: 32px;
+    padding-top: 49px;
+  }
 
-.benefits__item--gift {
-  padding-top: 52px;
+  &--gift {
+    padding-top: 52px;
+  }
 }
