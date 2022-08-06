@@ -1,35 +1,19 @@
 @charset "UTF-8";
 /*Подключаем шрифты*/
-/*Open Sans 400(woff2)*/
+/*Open Sans 400*/
 @font-face {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/opensans.woff2") format("woff2");
+  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
   font-display: swap;
 }
-/*Open Sans 400(woff)*/
-@font-face {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/opensans.woff") format("woff");
-  font-display: swap;
-}
-/*Open Sans 700(woff2)*/
+/*Open Sans 700*/
 @font-face {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/opensansbold.woff2") format("woff2");
-  font-display: swap;
-}
-/*Open Sans 700(woff)*/
-@font-face {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/opensansbold.woff") format("woff");
+  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
   font-display: swap;
 }
 /*Переменные для цветов*/
@@ -151,7 +135,7 @@
 
 .main-hero__container {
   background-color: var(--extra-light);
-  background-image: url("../../img/hero-mobile.jpg");
+  background-image: url("../img/hero-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -164,15 +148,12 @@
   color: var(--black);
   text-align: center;
 }
-
 .main-hero__title--index {
   padding: 73px 0 120px 0;
 }
-
 .main-hero__title--form {
   padding: 73px 0 73px 0;
 }
-
 .main-hero__title--catalog {
   padding: 73px 0 73px 0;
 }
@@ -193,11 +174,9 @@
   font-weight: 700;
   list-style-type: none;
 }
-
 .categories__item--interior {
   background-color: var(--green-blue);
 }
-
 .categories__item--toys {
   background-color: var(--turquoise);
 }
@@ -286,13 +265,11 @@
   text-transform: uppercase;
   cursor: pointer;
 }
-
 .button--light {
   color: var(--dark-grey);
   background-color: var(--white);
   border: 2px solid var(--dark-grey);
 }
-
 .button--dark {
   color: var(--white);
   background-color: var(--green-blue);
@@ -323,32 +300,26 @@
   color: var(--black);
   list-style-type: none;
 }
-
 .benefits__item--flower {
   margin-bottom: 30px;
   padding-top: 54px;
 }
-
 .benefits__item--cash {
   margin-bottom: 35px;
   padding-top: 53px;
 }
-
 .benefits__item--heart {
   margin-bottom: 32px;
   padding-top: 48px;
 }
-
 .benefits__item--threads {
   margin-bottom: 33px;
   padding-top: 51px;
 }
-
 .benefits__item--rocket {
   margin-bottom: 32px;
   padding-top: 49px;
 }
-
 .benefits__item--gift {
   padding-top: 52px;
 }
@@ -538,9 +509,7 @@
   margin: 0;
   margin-bottom: 30px;
 }
-
 .order-form__form-group:last-child {
-  margin: 0;
   margin-bottom: 17px;
 }
 
@@ -656,7 +625,6 @@
   list-style-type: none;
   margin-bottom: 30px;
 }
-
 .product-cards__item:last-child {
   margin-bottom: 0;
 }
