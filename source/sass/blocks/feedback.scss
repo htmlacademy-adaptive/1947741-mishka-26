@@ -1,0 +1,47 @@
+.feedback__container {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.feedback__title {
+  margin: 0;
+  margin-bottom: 14px;
+  padding: 0;
+  font-size: 25px;
+  font-weight: 700;
+  color: var(--black);
+}
+
+.feedback__blockquotes {
+  margin-bottom: 30px;
+}
+
+.feedback__quote {
+  margin: 0;
+}
+
+.feedback__text {
+  margin: 0;
+  margin-bottom: 33px;
+  padding: 0;
+  font-size: 15px;
+}
+
+.feedback__author-name {
+  font-style: normal;
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--black);
+}
+
+.feedback__author-nickname {
+  font-style: normal;
+}
+
+.feedback__control {
+  margin-bottom: 38px;
+}
+
+.feedback__button {
+  margin-bottom: 45px;
+}

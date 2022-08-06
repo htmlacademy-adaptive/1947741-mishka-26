@@ -1,0 +1,15 @@
+.user-list {
+  margin: 0;
+  padding: 0;
+}
+
+.user-list__item {
+  padding: 28px 0;
+  border-bottom: 1px solid var(--light);
+  list-style-type: none;
+}
+
+.user-list__link {
+  color: var(--black);
+  text-decoration: none;
+}

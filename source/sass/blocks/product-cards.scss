@@ -1,0 +1,17 @@
+.product-cards__container {
+  padding: 30px;
+}
+
+.product-cards__list {
+  margin: 0;
+  padding: 0;
+}
+
+.product-cards__item {
+  list-style-type: none;
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

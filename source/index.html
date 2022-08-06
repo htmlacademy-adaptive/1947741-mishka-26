@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Интернет-магазин Mishka.</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="page__body">
@@ -54,7 +55,7 @@
     <h1 class="visually-hidden">Интернет-магазин товаров ручной работы Mishka.</h1>
     <div class="main-hero">
       <div class="main-hero__container">
-        <p class="main-hero__title">Милые штуки ручной работы для дома</p>
+        <p class="main-hero__title main-hero__title--index">Милые штуки ручной работы для дома</p>
       </div>
     </div>
 
@@ -62,10 +63,10 @@
       <div class="categories__container">
         <h2 class="visually-hidden">Категории товаров.</h2>
         <ul class="categories__list">
-          <li class="categories__item">
+          <li class="categories__item categories__item--interior">
             <a class="categories__link" href="#">Предметы интерьера</a>
           </li>
-          <li class="categories__item">
+          <li class="categories__item categories__item--toys">
             <a class="categories__link" href="#">Детские игрушки</a>
           </li>
         </ul>
@@ -79,26 +80,22 @@
           <h3 class="weekly-product__title">Вязаные корзинки</h3>
           <p class="weekly-product__subtitle">ТОВАР НЕДЕЛИ</p>
         </div>
-        <div class="weekly-product__container">
+        <div class="weekly-product__wrapper">
           <div class="weekly-product__text">
             <p class="weekly-product__description">Экологически чистая пряжа, ручная работа. Доступны в&nbsp;шести
               расцветках и&nbsp;трёх размерах.</p>
-            <table class="weekly-product__table">
-              <tbody class="weekly-product__tbody">
-                <tr class="weekly-product__table-row">
-                  <td class="weekly-product__parameter">Цвет:</td>
-                  <td class="weekly-product__value">тиффани/серый</td>
-                </tr>
-                <tr class="weekly-product__table-row">
-                  <td class="weekly-product__parameter">Диаметр:</td>
-                  <td class="weekly-product__value">25 см</td>
-                </tr>
-                <tr class="weekly-product__table-row">
-                  <td class="weekly-product__parameter">Высота:</td>
-                  <td class="weekly-product__value">15 см</td>
-                </tr>
-              </tbody>
-            </table>
+            <dl class="weekly-product__table">
+              <dt class="weekly-product__parameter">Цвет:</dt>
+              <dd class="weekly-product__value">тиффани/серый</dd>
+            </dl>
+            <dl class="weekly-product__table">
+              <dt class="weekly-product__parameter">Диаметр:</dt>
+              <dd class="weekly-product__value">25 см</dd>
+            </dl>
+            <dl class="weekly-product__table">
+              <dt class="weekly-product__parameter">Высота:</dt>
+              <dd class="weekly-product__value">15 см</dd>
+            </dl>
           </div>
           <img class="weekly-product__image" src="img/weekly-product.jpg" width="260" height="315"
             alt="Варианты вязаных корзинок.">
@@ -159,15 +156,15 @@
             </cite>
           </blockquote>
         </div>
-        <div class="feedback__control control">
-          <ul class="control__list">
-            <li class="control__item">
-              <button class="control__button control__button--prev" type="button"><span
+        <div class="feedback__control feedback-control">
+          <ul class="feedback-control__list">
+            <li class="feedback-control__item">
+              <button class="feedback-control__button feedback-control__button--prev" type="button"><span
                   class="visually-hidden">Предыдущий
                   отзыв.</span></button>
             </li>
-            <li class="control__item">
-              <button class="control__button control__button--next" type="button"><span
+            <li class="feedback-control__item">
+              <button class="feedback-control__button feedback-control__button--next" type="button"><span
                   class="visually-hidden">Следующий
                   отзыв.</span></button>
             </li>
@@ -181,20 +178,17 @@
       <div class="contacts__container">
         <div class="contacts__text">
           <h2 class="contacts__title">Контакты</h2>
-          <table class="contacts__table">
-            <tbody class="contacts__tbody">
-              <tr class="contacts__table-row">
-                <td class="contacts__parameter">e-mail:</td>
-                <td class="contacts__value"><a class="contacts__value-link"
-                    href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
-              </tr>
-              <tr class="contacts__table-row">
-                <td class="contacts__parameter">адрес:</td>
-                <td class="contacts__value">г.&nbsp;Санкт-Петербург ул.&nbsp;Большая Конюшенная д.&nbsp;19/8,
-                  офис&nbsp;101</td>
-              </tr>
-            </tbody>
-          </table>
+          <dl class="contacts__table">
+            <dt class="contacts__parameter">e-mail:</dt>
+            <dd class="contacts__value"><a class="contacts__value-link"
+                href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></dd>
+          </dl>
+
+          <dl class="contacts__table">
+            <dt class="contacts__parameter">адрес:</dt>
+            <dd class="contacts__value">г.&nbsp;Санкт-Петербург ул.&nbsp;Большая Конюшенная д.&nbsp;19/8,
+              офис&nbsp;101</dd>
+          </dl>
         </div>
         <div class="contacts__map"></div>
         <a class="contacts__button button button--light" href="#">Напишите нам</a>
@@ -207,7 +201,7 @@
       <img class="main-footer__logo-image" src="img/logo-footer.svg" width="102" height="34"
         alt="Логотип интернет-магазина Mishka.">
     </a>
-    <ul class="social-list">
+    <ul class="main-footer__social-list social-list">
       <li class="social-list__item">
         <a class="social-list__link social-list__link--vk" href="https://vk.com/htmlacademy"><span
             class="visually-hidden">VK.</span></a>
@@ -238,7 +232,7 @@
           <ul class="modal__list">
             <li class="modal__item">
               <input class="modal__input" id="size-s" type="radio" name="size" value="S" checked>
-              <label class="modal__label " for="size-s">S</label>
+              <label class="modal__label modal__label--current" for="size-s">S</label>
             </li>
             <li class="modal__item">
               <input class="modal__input" id="size-m" type="radio" name="size" value="M">

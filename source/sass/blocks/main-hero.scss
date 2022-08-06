@@ -1,0 +1,32 @@
+.main-hero {
+  background-color: var(--extra-light);
+}
+
+.main-hero__container {
+
+  background-color: var(--extra-light);
+  background-image: url("../img/hero-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.main-hero__title {
+  margin: 0;
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--black);
+  text-align: center;
+
+  &--index {
+    padding: 73px 0 120px 0;
+  }
+
+  &--form {
+    padding: 73px 0 73px 0;
+  }
+
+  &--catalog {
+    padding: 73px 0 73px 0;
+  }
+}

@@ -1,0 +1,24 @@
+.button {
+  display: block;
+  padding: 16px;
+  font-family: inherit;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &--light {
+    color: var(--dark-grey);
+    background-color: var(--white);
+    border: 2px solid var(--dark-grey);
+  }
+
+  &--dark {
+    color: var(--white);
+    background-color: var(--green-blue);
+    border: none;
+  }
+}
