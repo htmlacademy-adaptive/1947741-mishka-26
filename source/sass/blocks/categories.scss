@@ -33,6 +33,7 @@
 
 @media (min-width: $tablet-width) {
   .categories__container {
+    margin-bottom: 40px;
     padding: 0 50px;
   }
 
@@ -49,6 +50,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .categories__container {
+    margin-bottom: 54px;
+  }
+
   .categories__item {
     padding-right: 350px;
   }
