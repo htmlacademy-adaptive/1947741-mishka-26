@@ -11,3 +11,25 @@
   font-size: 13px;
   line-height: 24px;
 }
+
+@media (min-width: $tablet-width) {
+  .order {
+    padding: 54px 0 50px;
+  }
+
+  .order__container {
+    margin-bottom: 13px;
+    padding: 0 50px;
+  }
+
+  .order__description {
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order {
+    padding-top: 99px;
+  }
+}

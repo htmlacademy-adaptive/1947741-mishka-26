@@ -5,14 +5,44 @@
 .user-info__list {
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .user-info__item {
-  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 22px;
+}
+
+.user-info__item:last-child {
+  margin-bottom: 0;
 }
 
 .user-info__label {
   line-height: 18px;
   font-weight: 700;
   color: var(--black);
+}
+
+@media (min-width: $tablet-width) {
+  .user-info__title {
+    margin-bottom: -16px;
+  }
+
+  .user-info__list {
+    margin-top: -16px;
+    padding-left: 167px;
+  }
+
+  .user-info__item {
+    flex-direction: row;
+  }
+
+  .user-info__label {
+    margin: auto 26px auto 0;
+  }
+
+  .user-info__input {
+    flex-grow: 1;
+  }
 }

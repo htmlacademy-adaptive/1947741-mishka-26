@@ -42,14 +42,21 @@
   }
 
   .main-hero__title {
-    max-width: 668px;
     margin: 0 auto;
     font-size: 43px;
     line-height: 50px;
 
     &--index {
-      padding-top: 155px;
+      padding: 155px 0 371px;
       padding-bottom: 371px;
+    }
+
+    &--form {
+      padding: 101px 0 75px;
+    }
+
+    &--catalog {
+      padding: 101px 0 75px;
     }
   }
 }
@@ -61,14 +68,20 @@
   }
 
   .main-hero__title {
-    max-width: 700px;
     margin: 0 auto;
     font-size: 53px;
     line-height: 57px;
 
     &--index {
-      padding-top: 158px;
-      padding-bottom: 355px;
+      padding: 158px 0 355px;
+    }
+
+    &--form {
+      padding: 102px 0 96px;
+    }
+
+    &--catalog {
+      padding: 102px 0 96px;
     }
   }
 }

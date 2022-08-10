@@ -1,8 +1,30 @@
+.email {
+  position: relative;
+}
+
 .email__title {
   margin-bottom: 5px;
 }
 
 .email__container {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .email__title {
+    position: absolute;
+    top: 19px;
+    margin-bottom: 0;
+  }
+
+  .email__container {
+    padding-left: 167px;
+  }
+
+  .email__input {
+    background-color: var(--extra-light);
+  }
 }

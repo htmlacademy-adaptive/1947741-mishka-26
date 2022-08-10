@@ -1,9 +1,16 @@
+.additionally {
+  position: relative;
+}
+
 .additionally__title {
   margin-bottom: 23px;
 }
 
 .additionally__container {
+  display: flex;
+  flex-direction: column;
   margin: 0;
+  margin-bottom: -13px;
   padding: 0;
 }
 
@@ -12,4 +19,16 @@
   line-height: 18px;
   color: var(--light-gray);
   border: 2px solid var(--dark-grey);
+}
+
+@media (min-width: $tablet-width) {
+  .additionally__title {
+    position: absolute;
+    top: 19px;
+    margin-bottom: 0;
+  }
+
+  .additionally__container {
+    padding-left: 167px;
+  }
 }

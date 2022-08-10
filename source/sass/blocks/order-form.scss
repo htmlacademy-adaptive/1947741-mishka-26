@@ -1,8 +1,29 @@
 .order-form__form-group {
   margin: 0;
   margin-bottom: 30px;
+}
 
-  &:last-child {
-    margin-bottom: 17px;
+.order-form__send {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .order-form__wrapper {
+    background-color: var(--extra-light);
+  }
+
+  .order-form__container {
+    padding: 50px;
+  }
+
+  .order-form__form-group {
+    margin-bottom: 0;
+  }
+
+  .order-form__send {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 50px;
   }
 }
