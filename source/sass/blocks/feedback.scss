@@ -1,6 +1,6 @@
 .feedback__container {
-  padding-right: 30px;
-  padding-left: 30px;
+  margin-bottom: 45px;
+  padding: 0 30px;
 }
 
 .feedback__title {
@@ -43,5 +43,73 @@
 }
 
 .feedback__button {
-  margin-bottom: 45px;
+  max-width: 260px;
+  margin-left: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback__container {
+    position: relative;
+    padding: 83px 50px 47px 50px;
+    background-image: url("../img/feedback.jpg");
+    background-repeat: no-repeat;
+    background-position: top left;
+  }
+
+  .feedback__title {
+    margin-bottom: 39px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .feedback__text {
+    margin-bottom: 61px;
+    font-size: 17px;
+  }
+
+  .feedback__control {
+    position: absolute;
+    right: 50px;
+    bottom: 62px;
+  }
+
+  .feedback__button {
+    position: absolute;
+    top: 79px;
+    right: 50px;
+    max-width: 175px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback__container {
+    padding-top: 78px;
+    padding-bottom: 96px;
+    background-position: 50px 0;
+  }
+
+  .feedback__title {
+    margin-bottom: 35px;
+    margin-left: 174px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .feedback__text {
+    margin-bottom: 44px;
+    margin-left: 175px;
+  }
+
+  .feedback__author-name {
+    margin-left: 174px;
+  }
+
+  .feedback__author-nickname {
+    margin-left: 174px;
+  }
+
+  .feedback__control {
+    bottom: 111px;
+  }
 }
