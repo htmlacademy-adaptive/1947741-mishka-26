@@ -3,3 +3,24 @@
   padding-left: 30px;
   background-color: var(--extra-light);
 }
+
+.main-footer__logo-link {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 51px 50px 58px;
+  }
+
+  .main-footer__logo-link {
+    display: block;
+    margin: auto 0;
+  }
+
+  .main-footer__logo-image {
+    display: block;
+  }
+}
