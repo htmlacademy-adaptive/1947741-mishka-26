@@ -44,7 +44,7 @@
 
 .feedback__button {
   max-width: 260px;
-  margin-left: 0;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
@@ -81,7 +81,7 @@
     position: absolute;
     top: 79px;
     right: 50px;
-    max-width: 175px;
+    min-width: 175px;
     margin-bottom: 0;
   }
 }
