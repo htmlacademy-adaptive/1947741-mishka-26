@@ -37,3 +37,19 @@
     min-width: 249px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .form-group__title {
+    margin-bottom: -19px;
+    margin-left: 46px;
+  }
+
+  .form-group__list {
+    padding-right: 175px;
+    padding-left: 175px;
+  }
+
+  .form-group__item {
+    min-width: 233px;
+  }
+}

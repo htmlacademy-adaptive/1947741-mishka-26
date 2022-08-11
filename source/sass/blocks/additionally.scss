@@ -32,3 +32,10 @@
     padding-left: 167px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .additionally__container {
+    padding-right: 175px;
+    padding-left: 175px;
+  }
+}

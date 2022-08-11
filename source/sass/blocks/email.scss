@@ -28,3 +28,10 @@
     background-color: var(--extra-light);
   }
 }
+
+@media (min-width: $desktop-width) {
+  .email__container {
+    padding-right: 175px;
+    padding-left: 175px;
+  }
+}

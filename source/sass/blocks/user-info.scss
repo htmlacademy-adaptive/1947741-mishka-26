@@ -46,3 +46,10 @@
     flex-grow: 1;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .user-info__list {
+    padding-right: 175px;
+    padding-left: 175px;
+  }
+}
