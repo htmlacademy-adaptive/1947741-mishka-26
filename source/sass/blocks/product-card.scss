@@ -101,10 +101,11 @@
   }
 
   .product-card__text {
+    height: 100%;
     padding: 27px 32px 26px 28px;
   }
 
   .product-card__description {
-    margin-bottom: 37px;
+    margin-bottom: auto;
   }
 }
