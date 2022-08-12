@@ -24,7 +24,40 @@
 }
 
 .categories__link {
+  display: block;
+  max-width: 130px;
   color: var(--white);
   text-decoration: none;
   cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .categories__container {
+    margin-bottom: 40px;
+    padding: 0 50px;
+  }
+
+  .categories__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .categories__item {
+    padding: 25px 167px 34px 36px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .categories__container {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+    margin-bottom: 54px;
+  }
+
+  .categories__item {
+    padding-right: 350px;
+  }
 }

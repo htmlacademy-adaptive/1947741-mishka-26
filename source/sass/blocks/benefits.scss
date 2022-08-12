@@ -17,6 +17,7 @@
 }
 
 .benefits__item {
+  max-width: 260px;
   line-height: 20px;
   font-weight: 700;
   color: var(--black);
@@ -49,5 +50,83 @@
 
   &--gift {
     padding-top: 52px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .benefits__container {
+    padding: 54px 50px 83px 50px;
+  }
+
+  .benefits__title {
+    margin-bottom: 42px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .benefits__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 668px;
+  }
+
+  .benefits__item {
+    max-width: 334px;
+    font-size: 20px;
+    line-height: 22px;
+
+    &--flower {
+      margin-bottom: 57px;
+      padding-top: 56px;
+      order: 1;
+    }
+
+    &--cash {
+      margin-bottom: 63px;
+      order: 3;
+    }
+
+    &--heart {
+      order: 5;
+    }
+
+    &--threads {
+      margin-bottom: 59px;
+      padding-top: 53px;
+      order: 2;
+    }
+
+    &--rocket {
+      margin-bottom: 58px;
+      padding-top: 51px;
+      order: 4;
+    }
+
+    &--gift {
+      padding-top: 53px;
+      order: 6;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .benefits__container {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 68px 50px 90px 50px;
+  }
+
+  .benefits__title {
+    margin-bottom: 39px;
+    margin-left: 175px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .benefits__list {
+    max-width: 688px;
+    margin-left: 175px;
   }
 }

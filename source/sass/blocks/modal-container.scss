@@ -1,1 +1,14 @@
-/*Позже добавится затемняющий фон, для модального окна*/
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: var(--light-white);
+  z-index: 3;
+}
+
+.modal-container__close {
+  display: none;
+}

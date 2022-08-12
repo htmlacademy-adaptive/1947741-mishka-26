@@ -1,5 +1,36 @@
 .main-footer {
-  padding-right: 30px;
-  padding-left: 30px;
   background-color: var(--extra-light);
+}
+
+.main-footer__container {
+  padding: 0 30px;
+}
+
+.main-footer__logo-link {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-footer__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 51px 50px 58px;
+  }
+
+  .main-footer__logo-link {
+    display: block;
+    margin: auto 0;
+  }
+
+  .main-footer__logo-image {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-footer__container {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+  }
 }

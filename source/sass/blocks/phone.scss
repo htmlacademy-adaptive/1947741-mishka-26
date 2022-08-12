@@ -1,8 +1,38 @@
+.phone {
+  position: relative;
+}
+
 .phone__title {
   margin-bottom: 5px;
 }
 
 .phone__container {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .phone__title {
+    position: absolute;
+    top: 19px;
+    margin-bottom: 0;
+  }
+
+  .phone__container {
+    padding-bottom: 24px;
+    padding-left: 167px;
+  }
+
+  .phone__input {
+    background-color: var(--extra-light);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .phone__container {
+    padding-right: 175px;
+    padding-left: 175px;
+  }
 }

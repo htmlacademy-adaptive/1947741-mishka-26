@@ -6,3 +6,25 @@
   line-height: 16px;
   text-align: center;
 }
+
+.send__button {
+  min-width: 260px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .send__info {
+    min-width: 329px;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 17px;
+    text-align: end;
+    order: 2;
+  }
+
+  .send__button {
+    min-width: 230px;
+    margin: 0;
+    order: 1;
+  }
+}

@@ -1,8 +1,33 @@
 .main-header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   background-color: var(--white);
 }
 
 .main-header__container {
-  padding: 22px 0;
   box-shadow: 0 1px 0 var(--light), inset 0 1px 0 var(--light);
+}
+
+@media (min-width: $tablet-width) {
+  .main-header {
+    margin: 0 auto;
+    border-bottom: 1px solid var(--super-light-2);
+  }
+
+  .main-header__container {
+    width: 100%;
+    max-width: 768px;
+    margin: auto;
+    padding: 0 50px;
+    box-shadow: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header__container {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+  }
 }
