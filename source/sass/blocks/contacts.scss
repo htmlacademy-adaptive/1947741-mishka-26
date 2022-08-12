@@ -108,6 +108,9 @@
   .contacts__container {
     display: grid;
     grid-template-columns: 1fr 527px;
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
     margin-bottom: 105px;
     padding: 71px 50px 0;
   }

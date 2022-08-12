@@ -10,6 +10,7 @@
 
 @media (min-width: $tablet-width) {
   .order-form__wrapper {
+    width: 100%;
     background-color: var(--extra-light);
   }
 
@@ -29,7 +30,20 @@
 }
 
 @media (min-width: $desktop-width) {
+  .order-form__wrapper {
+    width: 100%;
+  }
+
+  .order-form__container {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+  }
+
   .order-form__send {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
     padding: 0 225px;
   }
 }

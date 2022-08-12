@@ -51,6 +51,9 @@
 
 @media (min-width: $desktop-width) {
   .categories__container {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
     margin-bottom: 54px;
   }
 

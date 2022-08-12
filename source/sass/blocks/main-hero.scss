@@ -1,5 +1,9 @@
 .main-hero {
   background-color: var(--extra-light);
+
+  &--index {
+    background-color: transparent;
+  }
 }
 
 .main-hero__container {
@@ -63,6 +67,9 @@
 
 @media (min-width: $desktop-width) {
   .main-hero__container {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
     background-image: url("../img/hero-desktop.jpg");
     background-position: center;
   }

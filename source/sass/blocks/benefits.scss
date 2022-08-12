@@ -112,6 +112,9 @@
 
 @media (min-width: $desktop-width) {
   .benefits__container {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
     padding: 68px 50px 90px 50px;
   }
 
