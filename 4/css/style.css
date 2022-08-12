@@ -310,13 +310,13 @@
   }
 
   .main-hero__title {
+    max-width: 668px;
     margin: 0 auto;
     font-size: 43px;
     line-height: 50px;
   }
   .main-hero__title--index {
     padding: 155px 0 371px;
-    padding-bottom: 371px;
   }
   .main-hero__title--form {
     padding: 101px 0 75px;
