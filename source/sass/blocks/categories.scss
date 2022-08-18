@@ -8,11 +8,23 @@
 }
 
 .categories__item {
-  padding: 24px 160px 31px 30px;
   font-size: 19px;
   line-height: 24px;
   font-weight: 700;
   list-style-type: none;
+
+  &:hover {
+    margin-top: -5px;
+  }
+
+  &:focus {
+    margin-top: -5px;
+    outline: none;
+  }
+
+  &:active {
+    margin-top: -5px;
+  }
 
   &--interior {
     background-color: var(--green-blue);
@@ -24,15 +36,53 @@
 }
 
 .categories__link {
+  position: relative;
   display: block;
-  max-width: 130px;
+  padding: 24px 160px 31px 30px;
   color: var(--white);
   text-decoration: none;
   cursor: pointer;
 }
 
+.categories__link-text {
+  display: block;
+  max-width: 130px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+  }
+
+  &--interior::after {
+    top: 23px;
+    right: 36px;
+    width: 40px;
+    height: 62px;
+    background-image: url("../img/interior.svg");
+  }
+
+  &--toys::after {
+    top: 21px;
+    right: 27px;
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/toys.svg");
+  }
+}
+
+.categories__item:hover .categories__link-text::after {
+  opacity: 0.7;
+}
+
+.categories__item:active .categories__link-text::after {
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .categories__container {
+    margin-top: -119px;
     margin-bottom: 40px;
     padding: 0 50px;
   }
@@ -43,9 +93,29 @@
   }
 
   .categories__item {
-    padding: 25px 167px 34px 36px;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  .categories__link {
+    padding: 25px 167px 34px 36px;
+
+    &--interior:hover {
+      padding-bottom: 39px;
+    }
+  }
+
+  .categories__link-text {
+    &--interior::after {
+      top: 30px;
+    }
+
+    &--toys::after {
+      top: 31px;
+      right: 33px;
+      width: 61px;
+      height: 61px;
+    }
   }
 }
 
@@ -53,11 +123,17 @@
   .categories__container {
     width: 100%;
     max-width: 1150px;
-    margin: 0 auto;
-    margin-bottom: 54px;
+    margin: -119px auto 54px;
   }
 
-  .categories__item {
+  .categories__link {
     padding-right: 350px;
+  }
+
+  .categories__link-text {
+    &--toys::after {
+      right: 35px;
+      width: 60px;
+    }
   }
 }

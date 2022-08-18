@@ -17,6 +17,7 @@
 }
 
 .benefits__item {
+  position: relative;
   max-width: 260px;
   line-height: 20px;
   font-weight: 700;
@@ -28,9 +29,29 @@
     padding-top: 54px;
   }
 
+  &--flower::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 8px;
+    width: 33px;
+    height: 38px;
+    background-image: url("../img/flower.svg");
+  }
+
   &--cash {
     margin-bottom: 35px;
     padding-top: 53px;
+  }
+
+  &--cash::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 47px;
+    height: 27px;
+    background-image: url("../img/cash.svg");
   }
 
   &--heart {
@@ -38,9 +59,29 @@
     padding-top: 48px;
   }
 
+  &--heart::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 7px;
+    width: 34px;
+    height: 27px;
+    background-image: url("../img/heart.svg");
+  }
+
   &--threads {
     margin-bottom: 33px;
     padding-top: 51px;
+  }
+
+  &--threads::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 3px;
+    width: 35px;
+    height: 34px;
+    background-image: url("../img/threads.svg");
   }
 
   &--rocket {
@@ -48,8 +89,28 @@
     padding-top: 49px;
   }
 
+  &--rocket::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -6px;
+    width: 55px;
+    height: 23px;
+    background-image: url("../img/rocket.svg");
+  }
+
   &--gift {
     padding-top: 52px;
+  }
+
+  &--gift::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 3px;
+    width: 33px;
+    height: 32px;
+    background-image: url("../img/gift.svg");
   }
 }
 

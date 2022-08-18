@@ -47,6 +47,11 @@
   opacity: 0.6;
 }
 
+.main-navigation--closed .main-navigation__toggle:focus::before {
+  opacity: 0.6;
+  outline: none;
+}
+
 .main-navigation--closed .main-navigation__toggle:active::before {
   opacity: 0.3;
 }
@@ -75,6 +80,12 @@
   &:hover::before,
   &:hover::after {
     opacity: 0.6;
+  }
+
+  &:focus::before,
+  &:focus::after {
+    opacity: 0.6;
+    outline: none;
   }
 
   &:active::before,
