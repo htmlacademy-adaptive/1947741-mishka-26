@@ -1,8 +1,65 @@
 .input {
+  position: relative;
   padding: 17px 10px 17px 0;
   font: inherit;
   line-height: 18px;
-  color: var(--light-gray);
+  color: var(--dark-grey);
   border: none;
   box-shadow: inset 0 -2px 0 var(--black);
+
+  &::placeholder {
+    color: var(--light-gray);
+  }
+
+  &:hover {
+    box-shadow: inset 0 -2px 0 var(--moderate-cyan);
+  }
+
+  &:hover + .input__icon {
+    opacity: 1;
+    fill: var(--moderate-cyan);
+  }
+
+  &:focus {
+    box-shadow: inset 0 -2px 0 var(--moderate-cyan);
+    outline: none;
+  }
+
+  &:focus + .input__icon {
+    opacity: 1;
+    fill: var(--moderate-cyan);
+  }
+
+  &:active {
+    box-shadow: inset 0 -2px 0 var(--moderate-cyan);
+  }
+
+  &:active + .input__icon {
+    opacity: 1;
+    fill: var(--moderate-cyan);
+  }
+}
+
+.input__icon {
+  position: absolute;
+  top: 11px;
+  right: 7px;
+  fill: var(--black);
+  opacity: 0.2;
+}
+
+@media (min-width: $tablet-width) {
+  .input {
+    padding-left: 17px;
+  }
+
+  .input__icon {
+    right: 26px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .input__icon {
+    right: 183px;
+  }
 }

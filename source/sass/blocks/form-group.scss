@@ -4,12 +4,30 @@
 }
 
 .form-group__title {
+  display: flex;
+  width: 100%;
   margin: 0;
   margin-bottom: 30px;
   line-height: 16px;
   font-weight: 700;
   color: var(--green-blue);
   text-transform: uppercase;
+
+  &::after {
+    content: "";
+    align-self: center;
+    flex-grow: 1;
+    height: 1px;
+    background-color: var(--moderate-cyan);
+  }
+
+  &--type::after {
+    margin-left: 23px;
+  }
+
+  &--color::after {
+    margin-left: 16px;
+  }
 }
 
 .form-group__list {
@@ -18,9 +36,25 @@
   list-style-type: none;
 }
 
+.form-group__item {
+  margin-bottom: 12px;
+
+  &--checkbox {
+    margin-bottom: 37px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .form-group__title {
     margin-bottom: -18px;
+
+    &::after {
+      display: none;
+    }
   }
 
   .form-group__list {
@@ -35,6 +69,15 @@
 
   .form-group__item {
     min-width: 249px;
+    margin-bottom: 30px;
+
+    &--checkbox {
+      margin-bottom: 60px;
+    }
+
+    &--checkbox:nth-last-child(-n+2) {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -51,5 +94,13 @@
 
   .form-group__item {
     min-width: 233px;
+
+    &--checkbox {
+      margin-bottom: 57px;
+    }
+
+    &--checkbox:nth-last-child(-n+3) {
+      margin-bottom: 0;
+    }
   }
 }

@@ -1,5 +1,16 @@
 .user-info__title {
+  display: flex;
+  width: 100%;
   margin-bottom: 28px;
+
+  &::after {
+    content: "";
+    align-self: center;
+    flex-grow: 1;
+    height: 1px;
+    margin-left: 18px;
+    background-color: var(--moderate-cyan);
+  }
 }
 
 .user-info__list {
@@ -27,6 +38,10 @@
 @media (min-width: $tablet-width) {
   .user-info__title {
     margin-bottom: -16px;
+
+    &::after {
+      display: none;
+    }
   }
 
   .user-info__list {
