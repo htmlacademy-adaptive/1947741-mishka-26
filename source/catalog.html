@@ -66,8 +66,10 @@
   </header>
 
   <main class="main-container">
-    <div class="main-hero">
-      <h1 class="main-hero__title main-hero__title--catalog">Каталог товаров</h1>
+    <div class="main-hero main-hero--catalog">
+      <div class="main-hero__wrapper main-hero__wrapper--catalog">
+        <h1 class="main-hero__title main-hero__title--catalog">Каталог товаров</h1>
+      </div>
     </div>
 
     <section class="product-cards">
@@ -226,7 +228,7 @@
     </div>
   </footer>
 
-  <div class="modal-container modal-container__close">
+  <div class="modal-container">
     <!-- Для закрытия модального окна использовать класс modal-container__close -->
     <div class="modal">
       <div class="modal__content">
@@ -235,15 +237,15 @@
         <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
           <ul class="modal__list">
             <li class="modal__item">
-              <input class="modal__input" id="size-s" type="radio" name="size" value="S" checked>
+              <input class="visually-hidden modal__input" id="size-s" type="radio" name="size" value="S" checked>
               <label class="modal__label " for="size-s">S</label>
             </li>
             <li class="modal__item">
-              <input class="modal__input" id="size-m" type="radio" name="size" value="M">
+              <input class="visually-hidden modal__input" id="size-m" type="radio" name="size" value="M">
               <label class="modal__label" for="size-m">M</label>
             </li>
             <li class="modal__item">
-              <input class="modal__input" id="size-l" type="radio" name="size" value="L">
+              <input class="visually-hidden modal__input" id="size-l" type="radio" name="size" value="L">
               <label class="modal__label" for="size-l">L</label>
             </li>
           </ul>

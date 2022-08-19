@@ -42,6 +42,34 @@
     margin-top: -47px;
   }
 
+  .main-hero__wrapper {
+    position: relative;
+
+    &--form::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 24px;
+      background-image: url("../img/zig-zag-fill.svg");
+      background-repeat: repeat-x;
+      background-size: 761px 24px;
+    }
+
+    &--catalog::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 24px;
+      background-image: url("../img/zig-zag-fill.svg");
+      background-repeat: repeat-x;
+      background-size: 761px 24px;
+    }
+  }
+
   .main-hero__container {
     min-height: 758px;
     margin-top: -49px;
@@ -74,6 +102,20 @@
 @media (min-width: $desktop-width) {
   .main-hero {
     margin-top: -63px;
+  }
+
+  .main-hero__wrapper {
+    &--form::after {
+      bottom: -1px;
+      height: 34px;
+      background-size: 1050px 34px;
+    }
+
+    &--catalog::after {
+      bottom: -1px;
+      height: 34px;
+      background-size: 1050px 34px;
+    }
   }
 
   .main-hero__container {

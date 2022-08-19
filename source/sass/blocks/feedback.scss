@@ -1,6 +1,19 @@
 .feedback__container {
+  position: relative;
   margin-bottom: 45px;
   padding: 0 30px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -45px;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background-image: url("../../img/zig-zag-line.svg");
+    background-repeat: repeat-x;
+    background-size: 320px 6px;
+  }
 }
 
 .feedback__title {
@@ -50,10 +63,17 @@
 @media (min-width: $tablet-width) {
   .feedback__container {
     position: relative;
+    margin-bottom: 68px;
     padding: 83px 50px 47px 50px;
     background-image: url("../img/feedback.jpg");
     background-repeat: no-repeat;
     background-position: top left;
+
+    &::after {
+      bottom: -68px;
+      height: 17px;
+      background-size: 768px 17px;
+    }
   }
 
   .feedback__title {
@@ -92,9 +112,18 @@
     width: 100%;
     max-width: 1150px;
     margin: 0 auto;
+    margin-bottom: 67px;
     padding-top: 78px;
     padding-bottom: 96px;
     background-position: 50px 0;
+
+    &::after {
+      bottom: -67px;
+      width: 1050px;
+      height: 23px;
+      background-size: 1050px 23px;
+      transform: translateX(5%);
+    }
   }
 
   .feedback__title {
