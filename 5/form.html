@@ -13,6 +13,8 @@
   <header class="main-header">
     <div class="main-header__container">
       <nav class="main-navigation main-navigation--closed main-navigation--nojs">
+        <!--При отключенном JS меню находится в потоке, а кнопка управления открыванием/закрыванием меню выключается классом .main-navigation--nojs. Класс .main-navigation--closed удаляется из разметки.-->
+        <!--При включенном JS меню выпадает из потока. В разметку добавляется класс .main-navigation--closed. Кнопка управления открытия/закрытия меню отображается. При нажании на кнопку меню либо открывается, добавлением класса .main-navigation--opened, либо закрывается изменением класса на .main-navigation--closed.-->
         <a class="main-navigation__logo-link" href="index.html">
           <img class="main-navigation__logo-image" src="img/logo-mishka-mobile.svg" width="86" height="35"
             alt="Логотип интернет-магазина Mishka.">
@@ -88,12 +90,11 @@
               <li class="form-group__item control control--radio">
                 <input class="visually-hidden control__input" id="accessories" type="radio" name="type"
                   value="accessories" checked>
-                <span class="control__mark"></span>
-                <label class="control__label" for="accessories">Аксессуар для интерьера</label>
+                <label class="control__label  control__label--accessories" for="accessories">Аксессуар для
+                  интерьера</label>
               </li>
               <li class="form-group__item control control--radio">
                 <input class="visually-hidden control__input" id="toys" type="radio" name="type" value="toys">
-                <span class="control__mark"></span>
                 <label class="control__label" for="toys">Детская игрушка</label>
               </li>
             </ul>
@@ -107,32 +108,26 @@
               <ul class="form-group__list form-group__list--checkbox">
                 <li class="form-group__item form-group__item--checkbox control control--checkbox">
                   <input class="visually-hidden control__input" id="white" type="checkbox" name="white" checked>
-                  <span class="control__mark"></span>
                   <label class="control__label" for="white">Белый</label>
                 </li>
                 <li class="form-group__item form-group__item--checkbox control control--checkbox">
                   <input class="visually-hidden control__input" id="grey" type="checkbox" name="grey" checked>
-                  <span class="control__mark"></span>
                   <label class="control__label" for="grey">Серый</label>
                 </li>
                 <li class="form-group__item form-group__item--checkbox control control--checkbox">
                   <input class="visually-hidden control__input" id="tiffany" type="checkbox" name="tiffany">
-                  <span class="control__mark"></span>
                   <label class="control__label" for="tiffany">Тиффани</label>
                 </li>
                 <li class="form-group__item form-group__item--checkbox control control--checkbox">
                   <input class="visually-hidden control__input" id="black" type="checkbox" name="black">
-                  <span class="control__mark"></span>
                   <label class="control__label" for="black">Черный</label>
                 </li>
                 <li class="form-group__item form-group__item--checkbox control control--checkbox">
                   <input class="visually-hidden control__input" id="pink" type="checkbox" name="pink">
-                  <span class="control__mark"></span>
                   <label class="control__label" for="pink">Розовый</label>
                 </li>
                 <li class="form-group__item form-group__item--checkbox control control--checkbox">
                   <input class="visually-hidden control__input" id="orange" type="checkbox" name="orange">
-                  <span class="control__mark"></span>
                   <label class="control__label" for="orange">Оранжевый</label>
                 </li>
               </ul>
