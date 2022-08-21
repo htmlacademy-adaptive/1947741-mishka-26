@@ -98,6 +98,10 @@
   display: none;
 }
 
+.main-navigation--nojs .main-navigation__list {
+  display: block;
+}
+
 .main-navigation__text {
   display: none;
   margin: 0;
