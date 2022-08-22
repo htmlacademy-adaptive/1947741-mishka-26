@@ -34,10 +34,29 @@
 }
 
 .modal__label {
+  display: inline-block;
+  min-width: 82px;
+  min-height: 52px;
   padding: 18px 22px;
   line-height: 16px;
   font-weight: 700;
   text-transform: uppercase;
+  text-align: center;
+  border: 2px solid var(--easy-dark-grey);
+  cursor: pointer;
+
+  &:hover {
+    border-color: var(--soft-dark-grey);
+  }
+
+  &:focus {
+    border-color: var(--soft-dark-grey);
+    outline: none;
+  }
+}
+
+.modal__input:checked + .modal__label {
+  border-color: var(--moderate-cyan);
 }
 
 .modal__button {
@@ -59,6 +78,11 @@
   .modal__description {
     margin-bottom: 20px;
     font-size: 17px;
+  }
+
+  .modal__label {
+    min-width: 112px;
+    padding: 18px 37px;
   }
 
   .modal__button {

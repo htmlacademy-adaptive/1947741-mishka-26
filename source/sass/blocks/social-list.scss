@@ -1,10 +1,36 @@
 .social-list {
   display: flex;
-  margin: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 29px;
+  margin: auto 0;
   padding: 25px 59px 28px 59px;
   list-style-type: none;
   text-align: center;
   border-bottom: 1px solid var(--super-light);
+}
+
+.social-list__link {
+  &:hover .social-list__icon {
+    fill: var(--light-green-blue);
+  }
+
+  &:focus .social-list__icon {
+    fill: var(--light-green-blue);
+    outline: none;
+  }
+
+  &:active .social-list__icon {
+    fill: var(--light-green-blue);
+    opacity: 0.3;
+  }
+}
+
+.social-list__icon {
+  display: block;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  fill: var(--light-black);
 }
 
 @media (min-width: $tablet-width) {
