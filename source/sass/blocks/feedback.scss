@@ -65,9 +65,14 @@
     position: relative;
     margin-bottom: 68px;
     padding: 83px 50px 47px 50px;
-    background-image: url("../img/feedback.jpg");
+    background-image: url("../img/feedback-tablet.jpg");
     background-repeat: no-repeat;
+    background-size: 350px 457px;
     background-position: top left;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/feedback-tablet@2x.jpg");
+    }
 
     &::after {
       bottom: -68px;
@@ -115,7 +120,12 @@
     margin-bottom: 67px;
     padding-top: 78px;
     padding-bottom: 96px;
+    background-image: url("../../img/feedback-desktop.jpg");
     background-position: 50px 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/feedback-desktop@2x.jpg");
+    }
 
     &::after {
       bottom: -67px;

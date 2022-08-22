@@ -68,6 +68,8 @@
 
 .weekly-product__image {
   display: block;
+  width: 260px;
+  height: 315px;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 26px;
@@ -90,11 +92,11 @@
 
 @media (min-width: $tablet-width) {
   .weekly-product__container {
-    margin-bottom: 52px;
+    margin-bottom: 69px;
     padding: 0 50px;
 
     &::after {
-      bottom: -52px;
+      bottom: -69px;
       height: 17px;
       background-size: 768px 17px;
     }
@@ -140,7 +142,9 @@
   }
 
   .weekly-product__image {
-    margin-top: auto;
+    width: 334px;
+    height: 404px;
+    margin-top: 13px;
     margin-bottom: 0;
     grid-column: 2/3;
     grid-row: 1/3;
@@ -148,6 +152,7 @@
 
   .weekly-product__order {
     max-width: 292px;
+    margin-top: -112px;
   }
 
   .weekly-product__price {
@@ -214,6 +219,12 @@
     position: absolute;
     top: 0;
     right: 50px;
+    width: 525px;
+    height: 636px;
     z-index: -1;
+  }
+
+  .weekly-product__order {
+    margin-top: 0;
   }
 }
