@@ -106,8 +106,9 @@
 
 @media (min-width: $desktop-width) {
   .user-list {
-    min-width: 450px;
+    max-width: 450px;
     max-height: 89px;
+    margin-left: auto;
     order: 3;
   }
 }

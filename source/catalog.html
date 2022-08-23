@@ -19,8 +19,12 @@
         <!--При отключенном JS меню находится в потоке, а кнопка управления открыванием/закрыванием меню выключается классом .main-navigation--nojs.-->
         <!--При включенном JS меню выпадает из потока. В разметку добавляется класс .main-navigation--closed. Кнопка управления открытия/закрытия меню отображается. При нажании на кнопку меню либо открывается, добавлением класса .main-navigation--opened, либо закрывается изменением класса на .main-navigation--closed.-->
         <a class="main-navigation__logo-link" href="index.html">
-          <img class="main-navigation__logo-image" src="img/logo-mishka-mobile.svg" width="86" height="35"
-            alt="Логотип интернет-магазина Mishka.">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo-mishka-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-mishka-tablet.svg">
+            <img class="main-navigation__logo-image" src="img/logo-mishka-mobile.svg" width="86" height="35"
+              alt="Логотип интернет-магазина Mishka.">
+          </picture>
         </a>
         <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть
             меню.</span></button>
