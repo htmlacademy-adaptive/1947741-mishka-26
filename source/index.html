@@ -5,18 +5,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Интернет-магазин Mishka.</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/favicon-apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="page__body">
   <header class="main-header">
     <div class="main-header__container">
-      <nav class="main-navigation main-navigation--closed main-navigation--nojs">
-        <!--При отключенном JS меню находится в потоке, а кнопка управления открыванием/закрыванием меню выключается классом .main-navigation--nojs. Класс .main-navigation--closed удаляется из разметки.-->
+      <nav class="main-navigation main-navigation--nojs">
+        <!--При отключенном JS меню находится в потоке, а кнопка управления открыванием/закрыванием меню выключается классом .main-navigation--nojs.-->
         <!--При включенном JS меню выпадает из потока. В разметку добавляется класс .main-navigation--closed. Кнопка управления открытия/закрытия меню отображается. При нажании на кнопку меню либо открывается, добавлением класса .main-navigation--opened, либо закрывается изменением класса на .main-navigation--closed.-->
         <a class="main-navigation__logo-link" href="#">
-          <img class="main-navigation__logo-image" src="img/logo-mishka-mobile.svg" width="86" height="35"
-            alt="Логотип интернет-магазина Mishka.">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo-mishka-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-mishka-tablet.svg">
+            <img class="main-navigation__logo-image" src="img/logo-mishka-mobile.svg" width="86" height="35"
+              alt="Логотип интернет-магазина Mishka.">
+          </picture>
         </a>
         <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть
             меню.</span></button>
@@ -117,8 +125,14 @@
               <dd class="weekly-product__value">15 см</dd>
             </dl>
           </div>
-          <img class="weekly-product__image" src="img/weekly-product.jpg" width="260" height="315"
-            alt="Варианты вязаных корзинок.">
+          <picture>
+            <source media="(min-width: 1150px)"
+              srcset="img/weekly-product-desktop.jpg 1x, img/weekly-product-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/weekly-product-tablet.jpg 1x, img/weekly-product-tablet@2x.jpg 2x">
+            <img class="weekly-product__image" src="img/weekly-product-mobile.jpg"
+              srcset="img/weekly-product-mobile@2x.jpg 2x" width="260" height="315" alt="Варианты вязаных корзинок.">
+          </picture>
           <div class="weekly-product__order">
             <p class="weekly-product__price">Цена: 990 руб.</p>
             <a class="weekly-product__button button button--light" href="#">ЗАКАЗАТЬ</a>
