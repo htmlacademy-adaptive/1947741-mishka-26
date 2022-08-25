@@ -13,7 +13,7 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header">
+  <header class="main-header main-header--form">
     <div class="main-header__container">
       <nav class="main-navigation main-navigation--nojs">
         <!--При отключенном JS меню находится в потоке, а кнопка управления открыванием/закрыванием меню выключается классом .main-navigation--nojs.-->
@@ -29,24 +29,22 @@
         <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть
             меню.</span></button>
 
-        <div class="main-navigation__list site-list">
-          <ul class="site-list__basic">
-            <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="#">Вязание на заказ</a>
-            </li>
-          </ul>
-          <ul class="site-list__additional">
-            <li class="site-list__item">
-              <a class="site-list__link" href="#">Новые поступления</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="#">Распродажа</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="main-navigation__list site-list site-list--basic">
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Вязание на заказ</a>
+          </li>
+        </ul>
+        <ul class="main-navigation__list site-list site-list--additional">
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Новые поступления</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Распродажа</a>
+          </li>
+        </ul>
 
         <ul class="main-navigation__list user-list">
           <li class="user-list__item">
