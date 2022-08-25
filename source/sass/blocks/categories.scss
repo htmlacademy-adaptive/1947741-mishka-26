@@ -30,8 +30,32 @@
     background-color: var(--green-blue);
   }
 
+  &--interior:hover {
+    background-color: var(--easy-green-blue);
+  }
+
+  &--interior:focus {
+    background-color: var(--easy-green-blue);
+  }
+
+  &--interior:active {
+    background-color: var(--easy-green-blue);
+  }
+
   &--toys {
     background-color: var(--turquoise);
+  }
+
+  &--toys:hover {
+    background-color: var(--light-green-blue);
+  }
+
+  &--toys:focus {
+    background-color: var(--light-green-blue);
+  }
+
+  &--toys:active {
+    background-color: var(--light-green-blue);
   }
 }
 
