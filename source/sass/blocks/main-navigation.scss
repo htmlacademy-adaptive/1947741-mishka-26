@@ -16,6 +16,19 @@
 .main-navigation__logo-image {
   width: 86px;
   height: 79px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.6;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-navigation__toggle {
