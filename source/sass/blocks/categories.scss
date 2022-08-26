@@ -30,8 +30,32 @@
     background-color: var(--green-blue);
   }
 
+  &--interior:hover {
+    background-color: var(--easy-green-blue);
+  }
+
+  &--interior:focus {
+    background-color: var(--easy-green-blue);
+  }
+
+  &--interior:active {
+    background-color: var(--easy-green-blue);
+  }
+
   &--toys {
     background-color: var(--turquoise);
+  }
+
+  &--toys:hover {
+    background-color: var(--light-green-blue);
+  }
+
+  &--toys:focus {
+    background-color: var(--light-green-blue);
+  }
+
+  &--toys:active {
+    background-color: var(--light-green-blue);
   }
 }
 
@@ -138,7 +162,6 @@
 @media (min-width: $desktop-width) {
   .categories {
     &::after {
-      top: 82%;
       height: 34px;
       background-size: 1050px 34px;
     }

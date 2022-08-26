@@ -16,6 +16,19 @@
 .main-navigation__logo-image {
   width: 86px;
   height: 79px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.6;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-navigation__toggle {
@@ -123,11 +136,14 @@
 
 @media (min-width: $tablet-width) {
   .main-navigation {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .main-navigation__logo-link {
+    min-width: 385px;
+    padding-left: 50px;
     text-align: start;
     box-shadow: none;
   }
@@ -145,8 +161,9 @@
 
   .main-navigation__text {
     display: block;
-    margin-left: auto;
-    padding-top: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-right: 50px;
     order: 4;
   }
 }
@@ -170,12 +187,5 @@
 
   .main-navigation__toggle {
     display: none;
-  }
-
-  .main-navigation__text {
-    position: absolute;
-    right: 0;
-    bottom: 20px;
-    padding: 0;
   }
 }

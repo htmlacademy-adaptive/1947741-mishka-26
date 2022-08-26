@@ -43,10 +43,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .main-hero {
-    margin-top: -47px;
-  }
-
   .main-hero__wrapper {
     position: relative;
 
@@ -77,11 +73,11 @@
 
   .main-hero__container {
     min-height: 758px;
-    margin-top: -49px;
+    margin-top: -68px;
     padding: 0 50px;
     background-image: url("../img/hero-tablet.jpg");
     background-position: center;
-    border-top: 1px solid var(--super-light-2);
+    // border-top: 1px solid var(--super-light-2);
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/hero-tablet@2x.jpg");
@@ -100,20 +96,16 @@
     }
 
     &--form {
-      padding: 101px 0 75px;
+      padding: 33px 0 75px;
     }
 
     &--catalog {
-      padding: 101px 0 75px;
+      padding: 33px 0 75px;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
-  .main-hero {
-    margin-top: -63px;
-  }
-
   .main-hero__wrapper {
     &--form::after {
       bottom: -1px;
@@ -131,6 +123,7 @@
   .main-hero__container {
     width: 100%;
     margin: 0 auto;
+    margin-top: -62px;
     background-image: url("../img/hero-desktop.jpg");
     background-position: center;
 
@@ -150,11 +143,11 @@
     }
 
     &--form {
-      padding: 102px 0 96px;
+      padding: 34px 0 96px;
     }
 
     &--catalog {
-      padding: 102px 0 96px;
+      padding: 34px 0 96px;
     }
   }
 }

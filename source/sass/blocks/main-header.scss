@@ -12,14 +12,22 @@
 @media (min-width: $tablet-width) {
   .main-header {
     margin: 0 auto;
-    border-bottom: 1px solid var(--super-light-2);
+    background: linear-gradient(var(--white) 88px, var(--soft-black) 2px, transparent 90px);
+    background-color: var(--super-light-3);
+
+    &--form {
+      background-color: var(--extra-light);
+    }
+
+    &--catalog {
+      background-color: var(--extra-light);
+    }
   }
 
   .main-header__container {
     width: 100%;
     max-width: 768px;
     margin: auto;
-    padding: 0 50px;
     box-shadow: none;
   }
 }
