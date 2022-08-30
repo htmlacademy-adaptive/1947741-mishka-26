@@ -14,8 +14,11 @@
 }
 
 .main-navigation__logo-image {
+  display: block;
   width: 86px;
   height: 79px;
+  margin: 0 auto;
+  object-fit: contain;
 
   &:hover {
     opacity: 0.6;
