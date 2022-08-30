@@ -50,6 +50,7 @@
 
 @media (min-width: $tablet-width) {
   .form-group__title {
+    max-width: 150px;
     margin-bottom: -18px;
 
     &::after {

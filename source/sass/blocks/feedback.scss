@@ -82,6 +82,7 @@
   }
 
   .feedback__title {
+    max-width: 400px;
     margin-bottom: 39px;
     font-size: 43px;
     line-height: 50px;
@@ -94,6 +95,11 @@
   .feedback__text {
     margin-bottom: 61px;
     font-size: 17px;
+  }
+
+  .feedback__author {
+    display: block;
+    max-width: 400px;
   }
 
   .feedback__control {
@@ -137,6 +143,7 @@
   }
 
   .feedback__title {
+    max-width: 550px;
     margin-bottom: 35px;
     margin-left: 174px;
     font-size: 53px;
@@ -148,11 +155,17 @@
     margin-left: 175px;
   }
 
+  .feedback__author {
+    max-width: 550px;
+  }
+
   .feedback__author-name {
+    display: block;
     margin-left: 174px;
   }
 
   .feedback__author-nickname {
+    display: block;
     margin-left: 174px;
   }
 
