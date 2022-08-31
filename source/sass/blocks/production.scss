@@ -152,7 +152,7 @@
   .production__container {
     display: grid;
     grid-template-columns: 683px 367px;
-    grid-template-rows: 172px 283px;
+    grid-template-rows: 172px 1fr;
     justify-content: center;
     width: 100%;
     max-width: 1050px;
@@ -180,6 +180,7 @@
     grid-column: 1/2;
     grid-row: 1/3;
     width: 683px;
+    margin: auto;
   }
 
   .production__image-preview {
@@ -206,5 +207,6 @@
 
   .production__button {
     max-width: 230px;
+    margin-bottom: 10px;
   }
 }
