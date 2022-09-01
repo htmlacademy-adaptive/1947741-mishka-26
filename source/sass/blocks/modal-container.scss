@@ -7,8 +7,8 @@
   height: 100%;
   background-color: var(--light-white);
   z-index: 3;
-}
 
-.modal-container__close {
-  display: none;
+  &--close {
+    display: none;
+  }
 }

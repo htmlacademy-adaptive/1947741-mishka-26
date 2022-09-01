@@ -31,5 +31,18 @@
     font-weight: 700;
     color: #000000;
     text-decoration: none;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:focus {
+      opacity: 0.6;
+      outline: none;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
