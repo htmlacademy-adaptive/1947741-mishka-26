@@ -52,11 +52,11 @@
   content: "";
   position: absolute;
   top: 3px;
-  left: 0;
+  left: -1px;
   width: 20px;
   height: 2px;
   background-color: var(--light-black);
-  box-shadow: 0 4px 0 0 var(--light-black), 0 8px 0 0 var(--light-black);
+  box-shadow: 0 6px 0 0 var(--light-black), 0 12px 0 0 var(--light-black);
 }
 
 .main-navigation--closed .main-navigation__toggle:hover::before {
@@ -152,7 +152,7 @@
 
   .main-navigation__logo-link {
     min-width: 368px;
-    padding-left: 50px;
+    padding-left: 47px;
     text-align: start;
     box-shadow: none;
   }
@@ -181,8 +181,8 @@
 
   .main-navigation__text {
     position: absolute;
-    right: 0;
-    bottom: -44px;
+    right: -1px;
+    bottom: -45px;
     display: block;
     padding-right: 50px;
   }
@@ -236,5 +236,10 @@
     order: 3;
     min-width: 501px;
     margin: 0;
+  }
+
+  .main-navigation__text {
+    right: 1px;
+    bottom: -43px;
   }
 }

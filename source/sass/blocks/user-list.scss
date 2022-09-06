@@ -13,7 +13,7 @@
 .user-list__link {
   position: relative;
   display: block;
-  padding: 28px 0 27px 76px;
+  padding: 27px 0 27px 76px;
   color: var(--black);
   text-decoration: none;
 
@@ -53,12 +53,12 @@
   opacity: 0.2;
 
   &--search {
-    top: 32px;
+    top: 28px;
     left: 32px;
   }
 
   &--cart {
-    top: 31px;
+    top: 28px;
     left: 30px;
   }
 }
@@ -83,7 +83,7 @@
   .user-list__link {
     min-width: 82px;
     min-height: 89px;
-    padding: 33px 0 32px 85px;
+    padding: 33px 0 30px 82px;
     border-left: 1px solid var(--light);
   }
 
@@ -99,7 +99,7 @@
 
     &--cart {
       top: 35px;
-      left: 31px;
+      left: 32px;
     }
   }
 
@@ -112,5 +112,19 @@
   .user-list {
     max-width: 500px;
     margin-left: auto;
+  }
+
+  .user-list__link {
+    padding: 33px 1px 30px 81px;
+  }
+
+  .user-list__icon {
+    &--search {
+      left: 29px;
+    }
+
+    &--cart {
+      left: 28px;
+    }
   }
 }

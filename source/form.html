@@ -94,7 +94,7 @@
 
       <form class="order__form order-form" action="https://echo.htmlacademy.ru/" method="post">
         <div class="order-form__container">
-          <fieldset class="order-form__form-group form-group">
+          <fieldset class="order-form__form-group order-form__form-group--type form-group">
             <legend class="form-group__title form-group__title--type">ТИП</legend>
             <ul class="form-group__list form-group__list--radio">
               <li class="form-group__item control control--radio">
@@ -105,48 +105,48 @@
               </li>
               <li class="form-group__item control control--radio">
                 <input class="visually-hidden control__input" id="toys" type="radio" name="type" value="toys">
-                <label class="control__label" for="toys">Детская игрушка</label>
+                <label class="control__label control__label--toys" for="toys">Детская игрушка</label>
               </li>
             </ul>
           </fieldset>
         </div>
 
         <div class="order-form__wrapper">
-          <div class="order-form__container">
-            <fieldset class="order-form__form-group form-group">
+          <div class="order-form__container order-form__container--color">
+            <fieldset class="order-form__form-group order-form__form-group--color form-group">
               <legend class="form-group__title form-group__title--color">Цвет</legend>
               <ul class="form-group__list form-group__list--checkbox">
                 <li class="form-group__item form-group__item--checkbox control control--checkbox">
                   <input class="visually-hidden control__input" id="white" type="checkbox" name="white" checked>
-                  <label class="control__label" for="white">Белый</label>
+                  <label class="control__label control__label--color" for="white">Белый</label>
                 </li>
                 <li class="form-group__item form-group__item--checkbox control control--checkbox">
                   <input class="visually-hidden control__input" id="grey" type="checkbox" name="grey" checked>
-                  <label class="control__label" for="grey">Серый</label>
+                  <label class="control__label control__label--color" for="grey">Серый</label>
                 </li>
                 <li class="form-group__item form-group__item--checkbox control control--checkbox">
                   <input class="visually-hidden control__input" id="tiffany" type="checkbox" name="tiffany">
-                  <label class="control__label" for="tiffany">Тиффани</label>
+                  <label class="control__label control__label--color" for="tiffany">Тиффани</label>
                 </li>
                 <li class="form-group__item form-group__item--checkbox control control--checkbox">
                   <input class="visually-hidden control__input" id="black" type="checkbox" name="black">
-                  <label class="control__label" for="black">Черный</label>
+                  <label class="control__label control__label--color" for="black">Черный</label>
                 </li>
                 <li class="form-group__item form-group__item--checkbox control control--checkbox">
                   <input class="visually-hidden control__input" id="pink" type="checkbox" name="pink">
-                  <label class="control__label" for="pink">Розовый</label>
+                  <label class="control__label control__label--color" for="pink">Розовый</label>
                 </li>
                 <li class="form-group__item form-group__item--checkbox control control--checkbox">
                   <input class="visually-hidden control__input" id="orange" type="checkbox" name="orange">
-                  <label class="control__label" for="orange">Оранжевый</label>
+                  <label class="control__label control__label--color" for="orange">Оранжевый</label>
                 </li>
               </ul>
             </fieldset>
           </div>
         </div>
 
-        <div class="order-form__container">
-          <fieldset class="order-form__form-group form-group user-info">
+        <div class="order-form__container order-form__container--user-info">
+          <fieldset class="order-form__form-group order-form__form-group--user-info form-group user-info">
             <legend class="form-group__title user-info__title">ФИО</legend>
             <ul class="form-group__list user-info__list">
               <li class="user-info__item">
@@ -161,7 +161,7 @@
               </li>
               <li class="user-info__item">
                 <label class="user-info__label" for="second-name">Отчество:</label>
-                <input class="user-info__input input" id="second-name" type="text" name="second-name"
+                <input class="user-info__input input input--second-name" id="second-name" type="text" name="second-name"
                   placeholder="Отчество, если желаете">
               </li>
             </ul>
@@ -169,26 +169,26 @@
         </div>
 
         <div class="order-form__wrapper">
-          <div class="order-form__container">
-            <fieldset class="order-form__form-group form-group phone">
+          <div class="order-form__container order-form__container--phone-email">
+            <fieldset class="order-form__form-group order-form__form-group--phone form-group phone">
               <legend class="form-group__title phone__title">Тел</legend>
               <p class="phone__container">
                 <label class="visually-hidden" for="phone">Телефон.</label>
-                <input class="phone__input input" id="phone" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*"
-                  required>
-                <svg class="input__icon" width="25" height="24" viewBox="0 0 25 24">
+                <input class="phone__input input input--phone" id="phone" type="tel" name="phone"
+                  placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+                <svg class="phone__icon" width="25" height="24" viewBox="0 0 25 24">
                   <use xlink:href="img/sprite.svg#phone"></use>
                 </svg>
               </p>
             </fieldset>
 
-            <fieldset class="order-form__form-group form-group email">
+            <fieldset class="order-form__form-group order-form__form-group--email form-group email">
               <legend class="form-group__title email__title">E-mail</legend>
               <p class="email__container">
                 <label class="visually-hidden" for="email">E-mail.</label>
-                <input class="email__input input" id="email" type="email" name="email" placeholder="Ваш Email*"
-                  required>
-                <svg class="input__icon" width="32" height="21" viewBox="0 0 32 21">
+                <input class="email__input input input--email" id="email" type="email" name="email"
+                  placeholder="Ваш Email*" required>
+                <svg class="email__icon" width="32" height="21" viewBox="0 0 32 21">
                   <use xlink:href="img/sprite.svg#email"></use>
                 </svg>
               </p>
@@ -196,7 +196,7 @@
           </div>
         </div>
 
-        <div class="order-form__container">
+        <div class="order-form__container order-form__container--additionally">
           <fieldset class="order-form__form-group form-group additionally">
             <legend class="form-group__title additionally__title">Доп</legend>
             <p class="additionally__container">

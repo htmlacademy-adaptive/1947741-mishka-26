@@ -24,6 +24,14 @@
   padding: 0;
 }
 
+.email__icon {
+  position: absolute;
+  top: 16px;
+  right: 5px;
+  fill: var(--black);
+  opacity: 0.2;
+}
+
 @media (min-width: $tablet-width) {
   .email__title {
     position: absolute;
@@ -42,11 +50,20 @@
   .email__input {
     background-color: var(--extra-light);
   }
+
+  .email__icon {
+    top: 18px;
+    right: 22px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .email__container {
     padding-right: 175px;
     padding-left: 175px;
+  }
+
+  .email__icon {
+    right: 179px;
   }
 }

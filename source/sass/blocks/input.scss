@@ -7,6 +7,15 @@
   border: none;
   box-shadow: inset 0 -2px 0 var(--black);
 
+  &--second-name {
+    padding-bottom: 16px;
+  }
+
+  &--phone {
+    padding-top: 15px;
+    padding-bottom: 19px;
+  }
+
   &::placeholder {
     color: var(--light-gray);
   }
@@ -15,7 +24,12 @@
     box-shadow: inset 0 -2px 0 var(--moderate-cyan);
   }
 
-  &:hover + .input__icon {
+  &:hover + .email__icon {
+    opacity: 1;
+    fill: var(--moderate-cyan);
+  }
+
+  &:hover + .phone__icon {
     opacity: 1;
     fill: var(--moderate-cyan);
   }
@@ -25,7 +39,12 @@
     outline: none;
   }
 
-  &:focus + .input__icon {
+  &:focus + .email__icon {
+    opacity: 1;
+    fill: var(--moderate-cyan);
+  }
+
+  &:focus + .phone__icon {
     opacity: 1;
     fill: var(--moderate-cyan);
   }
@@ -34,32 +53,26 @@
     box-shadow: inset 0 -2px 0 var(--moderate-cyan);
   }
 
-  &:active + .input__icon {
+  &:active + .phone__icon {
     opacity: 1;
     fill: var(--moderate-cyan);
   }
 }
 
-.input__icon {
-  position: absolute;
-  top: 11px;
-  right: 7px;
-  fill: var(--black);
-  opacity: 0.2;
-}
 
 @media (min-width: $tablet-width) {
   .input {
-    padding-left: 17px;
-  }
+    padding: 11px 10px 14px 17px;
+    font-size: 19px;
 
-  .input__icon {
-    right: 26px;
-  }
-}
+    &--phone {
+      padding-top: 13px;
+      padding-bottom: 17px;
+    }
 
-@media (min-width: $desktop-width) {
-  .input__icon {
-    right: 183px;
+    &--email {
+      padding-top: 13px;
+      padding-bottom: 16px;
+    }
   }
 }

@@ -11,7 +11,7 @@
 }
 
 .product-cards__item {
-  margin: 0 auto 30px;
+  margin: 0 auto 29px;
 
   &:last-child {
     margin-bottom: 0;
@@ -20,7 +20,7 @@
 
 @media (min-width: $tablet-width) {
   .product-cards__container {
-    padding: 67px 50px 53px;
+    padding: 78px 50px 53px;
   }
 
   .product-cards__item {
@@ -33,7 +33,7 @@
     width: 100%;
     max-width: 1150px;
     margin: 0 auto;
-    padding-top: 111px;
+    padding-top: 128px;
     padding-bottom: 57px;
   }
 

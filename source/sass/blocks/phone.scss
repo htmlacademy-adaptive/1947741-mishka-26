@@ -24,6 +24,14 @@
   padding: 0;
 }
 
+.phone__icon {
+  position: absolute;
+  top: 12px;
+  right: 9px;
+  fill: var(--black);
+  opacity: 0.2;
+}
+
 @media (min-width: $tablet-width) {
   .phone__title {
     position: absolute;
@@ -36,12 +44,16 @@
   }
 
   .phone__container {
-    padding-bottom: 24px;
+    padding-bottom: 22px;
     padding-left: 167px;
   }
 
   .phone__input {
     background-color: var(--extra-light);
+  }
+
+  .phone__icon {
+    right: 26px;
   }
 }
 
@@ -49,5 +61,10 @@
   .phone__container {
     padding-right: 175px;
     padding-left: 175px;
+  }
+
+  .phone__icon {
+    top: 13px;
+    right: 184px;
   }
 }
