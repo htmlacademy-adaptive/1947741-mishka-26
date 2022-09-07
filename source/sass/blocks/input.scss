@@ -53,9 +53,28 @@
     box-shadow: inset 0 -2px 0 var(--moderate-cyan);
   }
 
+  &:active + .email__icon {
+    opacity: 1;
+    fill: var(--moderate-cyan);
+  }
+
   &:active + .phone__icon {
     opacity: 1;
     fill: var(--moderate-cyan);
+  }
+
+  &--error {
+    box-shadow: inset 0 -2px 0 var(--red);
+  }
+
+  &--error + .email__icon {
+    opacity: 1;
+    fill: var(--red);
+  }
+
+  &--error + .phone__icon {
+    opacity: 1;
+    fill: var(--red);
   }
 }
 

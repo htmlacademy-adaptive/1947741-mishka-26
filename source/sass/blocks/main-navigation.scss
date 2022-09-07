@@ -48,28 +48,30 @@
   cursor: pointer;
 }
 
-.main-navigation--closed .main-navigation__toggle::before {
-  content: "";
-  position: absolute;
-  top: 3px;
-  left: -1px;
-  width: 20px;
-  height: 2px;
-  background-color: var(--light-black);
-  box-shadow: 0 6px 0 0 var(--light-black), 0 12px 0 0 var(--light-black);
-}
+.main-navigation--closed .main-navigation__toggle {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: -1px;
+    width: 20px;
+    height: 2px;
+    background-color: var(--light-black);
+    box-shadow: 0 6px 0 0 var(--light-black), 0 12px 0 0 var(--light-black);
+  }
 
-.main-navigation--closed .main-navigation__toggle:hover::before {
-  opacity: 0.6;
-}
+  &:hover::before {
+    opacity: 0.6;
+  }
 
-.main-navigation--closed .main-navigation__toggle:focus::before {
-  opacity: 0.6;
-  outline: none;
-}
+  &:focus::before {
+    opacity: 0.6;
+    outline: none;
+  }
 
-.main-navigation--closed .main-navigation__toggle:active::before {
-  opacity: 0.3;
+  &:active::before {
+    opacity: 0.3;
+  }
 }
 
 .main-navigation--opened .main-navigation__toggle {

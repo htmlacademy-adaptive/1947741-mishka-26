@@ -10,7 +10,7 @@
     left: 0;
     width: 100%;
     height: 6px;
-    background-image: url("../../img/zig-zag-line.svg");
+    background-image: url("../img/zig-zag-line.svg");
     background-repeat: repeat-x;
     background-size: 320px 6px;
   }
@@ -138,7 +138,7 @@
     margin-bottom: 67px;
     padding-top: 79px;
     padding-bottom: 96px;
-    background-image: url("../../img/feedback-desktop.jpg");
+    background-image: url("../img/feedback-desktop.jpg");
     background-position: 50px 0;
 
     @media (min-resolution: 2dppx) {
@@ -149,7 +149,7 @@
       bottom: -90px;
       width: 1050px;
       height: 23px;
-      background-image: url("../../img/zig-zag-line-desktop.svg");
+      background-image: url("../img/zig-zag-line-desktop.svg");
       background-size: 1050px 23px;
       transform: translateX(5%);
     }
@@ -170,10 +170,10 @@
 
   .feedback__author {
     max-width: 550px;
+  }
 
-    & br {
-      display: none;
-    }
+  .feedback__author br {
+    display: none;
   }
 
   .feedback__author-name {

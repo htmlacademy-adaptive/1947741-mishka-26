@@ -49,10 +49,12 @@
   border-radius: 50%;
 }
 
-.control__input {
-  &:disabled + .control__label::before {
-    border-color: var(--super-light-3);
-  }
+.control__input:disabled + .control__label::before {
+  border-color: var(--super-light-3);
+}
+
+.control__input:disabled + .control__label {
+  color: var(--super-light-3);
 }
 
 .control__input[type="radio"]:checked + .control__label::before {
