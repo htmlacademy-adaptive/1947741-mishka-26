@@ -31,6 +31,10 @@
     height: 38px;
   }
 
+  &:hover {
+    cursor: pointer;
+  }
+
   &:hover::before {
     border-color: var(--moderate-cyan);
     cursor: pointer;
