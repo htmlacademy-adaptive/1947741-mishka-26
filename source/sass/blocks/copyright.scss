@@ -1,7 +1,7 @@
 .copyright {
   display: flex;
   justify-content: center;
-  padding: 22px 39px 23px 39px;
+  padding: 21px 39px 23px 39px;
   text-align: center;
 }
 
@@ -35,7 +35,7 @@
 .copyright__icon {
   display: block;
   width: 27px;
-  height: 34px;
+  height: 35px;
   fill: var(--green-blue);
 }
 
@@ -43,5 +43,16 @@
   .copyright {
     max-width: 181px;
     padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright {
+    max-width: 185px;
+    padding: 0;
+  }
+
+  .copyright__text {
+    margin-right: 30px;
   }
 }

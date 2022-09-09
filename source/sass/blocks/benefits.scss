@@ -1,5 +1,5 @@
 .benefits__container {
-  padding: 31px 30px 58px 30px;
+  padding: 37px 30px 58px 30px;
 }
 
 .benefits__title {
@@ -116,7 +116,7 @@
 
 @media (min-width: $tablet-width) {
   .benefits__container {
-    padding: 54px 50px 83px 50px;
+    padding: 56px 50px 50px 50px;
   }
 
   .benefits__title {
@@ -145,6 +145,7 @@
 
     &--cash {
       margin-bottom: 63px;
+      padding-top: 51px;
       order: 3;
     }
 
@@ -154,8 +155,12 @@
 
     &--threads {
       margin-bottom: 59px;
-      padding-top: 53px;
+      padding-top: 56px;
       order: 2;
+    }
+
+    &--threads::before {
+      top: 3px;
     }
 
     &--rocket {
@@ -165,8 +170,12 @@
     }
 
     &--gift {
-      padding-top: 53px;
+      padding-top: 48px;
       order: 6;
+    }
+
+    &--gift::before {
+      top: -5px;
     }
   }
 }
@@ -176,7 +185,7 @@
     width: 100%;
     max-width: 1150px;
     margin: 0 auto;
-    padding: 68px 50px 90px 50px;
+    padding: 90px 50px 58px 50px;
   }
 
   .benefits__title {
@@ -189,5 +198,34 @@
   .benefits__list {
     max-width: 688px;
     margin-left: 175px;
+  }
+
+  .benefits__item {
+    max-width: 338px;
+
+    &--cash::before {
+      top: -2px;
+    }
+
+    &--threads::before {
+      top: 4px;
+    }
+
+    &--rocket {
+      margin-left: 0;
+      padding-top: 52px;
+    }
+
+    &--rocket::before {
+      top: 1px;
+    }
+
+    &--gift {
+      padding-top: 49px;
+    }
+
+    &--gift::before {
+      top: -4px;
+    }
   }
 }

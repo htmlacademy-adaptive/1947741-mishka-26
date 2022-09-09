@@ -37,7 +37,7 @@
   display: inline-block;
   min-width: 82px;
   min-height: 52px;
-  padding: 18px 22px;
+  padding: 16px 22px 15px;
   line-height: 16px;
   font-weight: 700;
   text-transform: uppercase;
@@ -66,11 +66,11 @@
 
 @media (min-width: $tablet-width) {
   .modal {
-    padding: 38px 92px 46px 93px;
+    padding: 37px 105px 44px 107px;
   }
 
   .modal__title {
-    margin-bottom: 11px;
+    margin-bottom: 13px;
     font-size: 30px;
     line-height: 57px;
   }
@@ -80,9 +80,13 @@
     font-size: 17px;
   }
 
+  .modal__list {
+    margin-bottom: 33px;
+  }
+
   .modal__label {
     min-width: 112px;
-    padding: 18px 37px;
+    padding: 17px 37px 16px;
   }
 
   .modal__button {

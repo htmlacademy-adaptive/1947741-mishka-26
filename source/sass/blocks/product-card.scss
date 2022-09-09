@@ -21,9 +21,13 @@
 
 .product-card__text {
   max-width: 260px;
-  padding: 28px 28px 27px 28px;
+  padding: 28px 28px 25px 27px;
   text-align: center;
   border: 1px solid var(--light);
+
+  &--toy-basket {
+    padding-top: 25px;
+  }
 }
 
 .product-card__link-title {
@@ -44,13 +48,17 @@
 
 .product-card__title {
   margin: 0;
-  margin-bottom: 6px;
+  margin-bottom: 5px;
   padding: 0;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
   text-align: start;
   color: var(--black);
+
+  &--toy-basket {
+    margin-bottom: 9px;
+  }
 }
 
 .product-card__description {
@@ -98,16 +106,26 @@
     display: flex;
     flex-direction: column;
     max-width: 334px;
-    padding: 27px 33px 26px 34px;
+    padding: 26px 33px 26px 32px;
   }
 
   .product-card__title {
+    margin-bottom: 7px;
     font-size: 20px;
+
+    &--laundry-basket {
+      margin-bottom: 10px;
+    }
   }
 
   .product-card__description {
     margin-bottom: auto;
     font-size: 15px;
+  }
+
+  .product-card__buy {
+    margin: 14px 0 -2px;
+    padding-top: 24px;
   }
 
   .product-card__price {
@@ -139,5 +157,23 @@
 
   .product-card__description {
     margin-bottom: auto;
+
+    &--toy-bunny {
+      margin-left: -1px;
+    }
+
+    &--laundry-basket {
+      margin-left: -2px;
+    }
+
+    &--toy-basket {
+      margin-left: -2px;
+    }
+  }
+
+  .product-card__buy {
+    margin-top: 12px;
+    margin-left: -2px;
+    padding-top: 23px;
   }
 }

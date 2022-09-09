@@ -1,7 +1,7 @@
 .user-info__title {
   display: flex;
   width: 100%;
-  margin-bottom: 28px;
+  margin-bottom: 29px;
 
   &::after {
     content: "";
@@ -51,10 +51,12 @@
 
   .user-info__item {
     flex-direction: row;
+    margin-bottom: 25px;
   }
 
   .user-info__label {
     margin: auto 26px auto 0;
+    font-size: 19px;
   }
 
   .user-info__input {
@@ -65,6 +67,6 @@
 @media (min-width: $desktop-width) {
   .user-info__list {
     padding-right: 175px;
-    padding-left: 175px;
+    padding-left: 177px;
   }
 }

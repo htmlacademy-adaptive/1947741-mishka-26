@@ -1,4 +1,5 @@
 .main-header {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -10,32 +11,8 @@
 }
 
 @media (min-width: $tablet-width) {
-  .main-header {
-    margin: 0 auto;
-    background: linear-gradient(var(--white) 88px, var(--soft-black) 2px, transparent 90px);
-    background-color: var(--super-light-3);
-
-    &--form {
-      background-color: var(--extra-light);
-    }
-
-    &--catalog {
-      background-color: var(--extra-light);
-    }
-  }
-
   .main-header__container {
     width: 100%;
-    max-width: 768px;
-    margin: auto;
     box-shadow: none;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .main-header__container {
-    width: 100%;
-    max-width: 1150px;
-    margin: 0 auto;
   }
 }

@@ -30,7 +30,7 @@
   text-align: center;
 
   &--index {
-    padding: 73px 10px 120px 10px;
+    padding: 73px 10px 120px 9px;
   }
 
   &--form {
@@ -49,8 +49,8 @@
     &--form::after {
       content: "";
       position: absolute;
-      bottom: 0;
-      left: 0;
+      bottom: -12px;
+      left: 3px;
       width: 100%;
       height: 24px;
       background-image: url("../img/zig-zag-fill.svg");
@@ -61,8 +61,8 @@
     &--catalog::after {
       content: "";
       position: absolute;
-      bottom: 0;
-      left: 0;
+      bottom: -11px;
+      left: 3px;
       width: 100%;
       height: 24px;
       background-image: url("../img/zig-zag-fill.svg");
@@ -73,11 +73,10 @@
 
   .main-hero__container {
     min-height: 758px;
-    margin-top: -68px;
+    margin-top: -74px;
     padding: 0 50px;
     background-image: url("../img/hero-tablet.jpg");
     background-position: center;
-    // border-top: 1px solid var(--super-light-2);
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/hero-tablet@2x.jpg");
@@ -92,15 +91,15 @@
     line-height: 50px;
 
     &--index {
-      padding: 155px 0 371px;
+      padding: 163px 0 371px;
     }
 
     &--form {
-      padding: 33px 0 75px;
+      padding: 35px 0 75px;
     }
 
     &--catalog {
-      padding: 33px 0 75px;
+      padding: 36px 0 75px;
     }
   }
 }
@@ -108,20 +107,23 @@
 @media (min-width: $desktop-width) {
   .main-hero__wrapper {
     &--form::after {
-      bottom: -1px;
+      bottom: -16px;
+      left: -1px;
       height: 34px;
-      background-size: 1050px 34px;
+      background-size: 1150px 34px;
     }
 
     &--catalog::after {
-      bottom: -1px;
+      bottom: -17px;
+      left: 0;
       height: 34px;
-      background-size: 1050px 34px;
+      background-size: 1150px 34px;
     }
   }
 
   .main-hero__container {
     width: 100%;
+    min-height: 746px;
     margin: 0 auto;
     margin-top: -62px;
     background-image: url("../img/hero-desktop.jpg");
@@ -139,15 +141,15 @@
     line-height: 57px;
 
     &--index {
-      padding: 158px 0 355px;
+      padding: 156px 0 355px;
     }
 
     &--form {
-      padding: 34px 0 96px;
+      padding: 38px 0 96px;
     }
 
     &--catalog {
-      padding: 34px 0 96px;
+      padding: 38px 0 96px;
     }
   }
 }

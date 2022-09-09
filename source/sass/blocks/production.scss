@@ -24,10 +24,9 @@
 
 .production__title {
   position: relative;
-  margin: 0;
-  margin-bottom: 27px;
+  margin: -1px 0 25px;
   padding: 0;
-  padding-left: 91px;
+  padding-left: 90px;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
@@ -36,8 +35,8 @@
   &::before {
     content: "";
     position: absolute;
-    top: 13px;
-    left: 34px;
+    top: 12px;
+    left: 33px;
     width: 32px;
     height: 22px;
     background-image: url("../img/video.svg");
@@ -58,7 +57,7 @@
 .production__player-button {
   position: absolute;
   top: 37px;
-  left: 80px;
+  left: 79px;
   padding: 0;
 
   &:hover {
@@ -79,7 +78,7 @@
 .production__text {
   margin: 0;
   margin-bottom: 41px;
-  padding-left: 34px;
+  padding: 1px 0 0 33px;
   font-size: 13px;
   line-height: 24px;
 }
@@ -87,6 +86,9 @@
 .production__button {
   max-width: 192px;
   margin: 0 auto;
+  padding: 14px 15px;
+  letter-spacing: 1px;
+  word-spacing: -3px;
 }
 
 @media (min-width: $tablet-width) {
@@ -100,18 +102,18 @@
     max-width: 668px;
     margin-bottom: 64px;
     padding-top: 0;
-    padding-bottom: 46px;
+    padding-bottom: 44px;
   }
 
   .production__title {
     margin-bottom: 25px;
-    padding-left: 107px;
+    padding-left: 106px;
     font-size: 20px;
     order: 2;
 
     &::before {
       top: -2px;
-      left: 42px;
+      left: 41px;
     }
   }
 
@@ -138,13 +140,16 @@
   }
 
   .production__text {
-    padding-left: 40px;
+    margin-bottom: 40px;
+    padding-left: 39px;
     font-size: 15px;
     line-height: 30px;
   }
 
   .production__button {
     max-width: 584px;
+    letter-spacing: 0;
+    word-spacing: 1px;
   }
 }
 
@@ -166,13 +171,13 @@
     grid-column: 2/3;
     grid-row: 1/2;
     margin-bottom: 0;
-    padding: 96px 110px 28px 80px;
+    padding: 97px 110px 28px 78px;
     border: 1px solid var(--light);
     border-bottom: none;
 
     &::before {
       top: 47px;
-      left: 79px;
+      left: 77px;
     }
   }
 
@@ -200,13 +205,14 @@
   }
 
   .production__text {
-    margin-bottom: 52px;
-    padding-left: 80px;
+    margin-bottom: 50px;
+    padding-left: 78px;
     padding-right: 36px;
   }
 
   .production__button {
     max-width: 230px;
+    margin-left: 78px;
     margin-bottom: 10px;
   }
 }
