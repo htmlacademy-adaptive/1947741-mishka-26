@@ -171,6 +171,10 @@
     display: none;
   }
 
+  .main-navigation--nojs .main-navigation__list {
+    display: flex;
+  }
+
   .main-navigation__container-user {
     position: relative;
     display: flex;

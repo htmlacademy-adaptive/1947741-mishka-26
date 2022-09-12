@@ -40,7 +40,7 @@
   .product-cards__list {
     display: grid;
     grid-template-columns: repeat(3, 316px);
-    column-gap: 51px;
+    gap: 51px;
     justify-content: center;
   }
 
